@@ -32,19 +32,6 @@ F 3 "" H 11015 7775 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C15
-U 1 1 54724A1C
-P 10715 7625
-F 0 "C15" V 10765 7425 40  0000 L CNN
-F 1 "100n" V 10815 7425 40  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 10753 7475 30  0001 C CNN
-F 3 "" H 10715 7625 60  0000 C CNN
-F 4 "X5R 25V" H 10715 7625 50  0001 C CNN "Characteristics"
-F 5 "" H 10715 7625 50  0001 C CNN "Config"
-	1    10715 7625
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR024
 U 1 1 5472485D
 P 10465 8625
@@ -60,38 +47,6 @@ Wire Wire Line
 Wire Wire Line
 	10865 7625 11015 7625
 NoConn ~ 10065 8125
-$Comp
-L Connector:TestPoint TP6
-U 1 1 5DA8EEF9
-P 9645 8025
-AR Path="/5DA8EEF9" Ref="TP6"  Part="1" 
-AR Path="/5C65C880/5DA8EEF9" Ref="TP?"  Part="1" 
-AR Path="/5D93F36E/5DA8EEF9" Ref="TP?"  Part="1" 
-AR Path="/5D8BDE6F/5DA8EEF9" Ref="TP3"  Part="1" 
-F 0 "TP6" V 9645 8225 50  0000 L CNN
-F 1 "TestPoint" H 9703 8054 50  0001 L CNN
-F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 9845 8025 50  0001 C CNN
-F 3 "~" H 9845 8025 50  0001 C CNN
-F 4 "nofit" H 9645 8025 50  0001 C CNN "Config"
-	1    9645 8025
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5DA8F3AC
-P 9645 7925
-AR Path="/5DA8F3AC" Ref="TP5"  Part="1" 
-AR Path="/5C65C880/5DA8F3AC" Ref="TP?"  Part="1" 
-AR Path="/5D93F36E/5DA8F3AC" Ref="TP?"  Part="1" 
-AR Path="/5D8BDE6F/5DA8F3AC" Ref="TP4"  Part="1" 
-F 0 "TP5" V 9645 8125 50  0000 L CNN
-F 1 "TestPoint" H 9703 7954 50  0001 L CNN
-F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 9845 7925 50  0001 C CNN
-F 3 "~" H 9845 7925 50  0001 C CNN
-F 4 "nofit" H 9645 7925 50  0001 C CNN "Config"
-	1    9645 7925
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9465 7925 9645 7925
 Wire Wire Line
@@ -136,25 +91,6 @@ F 3 "" H 4720 2770 50  0001 C CNN
 	1    4720 2770
 	1    0    0    -1  
 $EndComp
-$Comp
-L Power_Protection:USBLC6-2SC6 U?
-U 1 1 5E5B2BE4
-P 4720 2270
-AR Path="/5E1D22D5/5E5B2BE4" Ref="U?"  Part="1" 
-AR Path="/5E5B2BE4" Ref="U4"  Part="1" 
-AR Path="/5E5A3556/5E5B2BE4" Ref="U?"  Part="1" 
-F 0 "U4" H 4470 2670 50  0000 C CNN
-F 1 "USBLC6-4SC6" H 5120 2670 50  0000 C CNN
-F 2 "KiCad/Package_TO_SOT_SMD.pretty:SOT-23-6" H 3970 2670 50  0001 C CNN
-F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 4920 2620 50  0001 C CNN
-F 4 "TVS DIODE 5.25V 17V SOT23-6" H 4720 2270 50  0001 C CNN "Description"
-F 5 "STMicroelectronics" H 4720 2270 50  0001 C CNN "MFN"
-F 6 "USBLC6-4SC6" H 4720 2270 50  0001 C CNN "MPN"
-F 7 "497-4492-1-ND" H 4720 2270 50  0001 C CNN "SKU"
-F 8 "Digikey" H 4720 2270 50  0001 C CNN "Vendor"
-	1    4720 2270
-	1    0    0    -1  
-$EndComp
 Text GLabel 4220 2170 0    50   Input ~ 0
 USB_P
 Text GLabel 5220 2170 2    50   Input ~ 0
@@ -189,25 +125,6 @@ F 3 "" H 2230 3410 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2230 3310 2230 3360
-$Comp
-L canape-rescue:USB_C_Receptacle_USB2.0-Connector J?
-U 1 1 5E5B2BFA
-P 2230 2410
-AR Path="/5E1D22D5/5E5B2BFA" Ref="J?"  Part="1" 
-AR Path="/5E5B2BFA" Ref="J1"  Part="1" 
-AR Path="/5E5A3556/5E5B2BFA" Ref="J?"  Part="1" 
-F 0 "J1" H 2337 3277 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 2337 3186 50  0000 C CNN
-F 2 "KiCad/Connector_USB.pretty:USB_C_Receptacle_Amphenol_12401610E4-2A" H 2380 2410 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/12401832E402A_Dwg_RevX1_04-25-17.pdf" H 2380 2410 50  0001 C CNN
-F 4 "Amphenol ICC (Commercial Products)" H 2230 2410 50  0001 C CNN "MFN"
-F 5 "12401832E402A" H 2230 2410 50  0001 C CNN "MPN"
-F 6 "Digikey" H 2230 2410 50  0001 C CNN "Vendor"
-F 7 "12401832E402ACT-ND" H 2230 2410 50  0001 C CNN "SKU"
-F 8 "" H 2230 2410 50  0001 C CNN "Config"
-	1    2230 2410
-	1    0    0    -1  
-$EndComp
 Connection ~ 2830 2510
 Connection ~ 2830 2410
 Wire Wire Line
@@ -262,56 +179,6 @@ F 3 "" H 4305 5280 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4305 4480
-$Comp
-L Regulator_Linear:MCP1703A-3302_SOT23 U?
-U 1 1 5E5B2C21
-P 3755 4480
-AR Path="/5DFF34AF/5E5B2C21" Ref="U?"  Part="1" 
-AR Path="/5E5B2C21" Ref="U5"  Part="1" 
-AR Path="/5E5A3556/5E5B2C21" Ref="U?"  Part="1" 
-F 0 "U5" H 3605 4605 50  0000 C CNN
-F 1 "MCP1703A-3302_SOT23" H 3755 4605 50  0000 L CNN
-F 2 "KiCad/Package_TO_SOT_SMD.pretty:SOT-23" H 3755 4680 50  0001 C CNN
-F 3 "" H 3755 4430 50  0001 C CNN
-F 4 "Microchip" H 3755 4480 60  0001 C CNN "MFN"
-F 5 "MCP1703T-3302E/CB" H 3755 4480 60  0001 C CNN "MPN"
-F 6 "IC REG LIN 3.3V 250MA SOT23A-3" H 3755 4480 60  0001 C CNN "Description"
-F 7 "MCP1703T-3302E/CBCT-ND" H 3755 4480 50  0001 C CNN "SKU"
-F 8 "Digikey" H 3755 4480 50  0001 C CNN "Vendor"
-F 9 "" H 3755 4480 50  0001 C CNN "Config"
-	1    3755 4480
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E5B2C28
-P 3205 4830
-AR Path="/5E5A3556/5E5B2C28" Ref="C?"  Part="1" 
-AR Path="/5E5B2C28" Ref="C4"  Part="1" 
-F 0 "C4" H 3320 4876 50  0000 L CNN
-F 1 "1uF" H 3320 4785 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 3243 4680 50  0001 C CNN
-F 3 "~" H 3205 4830 50  0001 C CNN
-F 4 "X5R 25V" H 3205 4830 50  0001 C CNN "Characteristics"
-F 5 "" H 3205 4830 50  0001 C CNN "Config"
-	1    3205 4830
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E5B2C2F
-P 4305 4830
-AR Path="/5E5A3556/5E5B2C2F" Ref="C?"  Part="1" 
-AR Path="/5E5B2C2F" Ref="C6"  Part="1" 
-F 0 "C6" H 4420 4876 50  0000 L CNN
-F 1 "1uF" H 4420 4785 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 4343 4680 50  0001 C CNN
-F 3 "~" H 4305 4830 50  0001 C CNN
-F 4 "X5R 25V" H 4305 4830 50  0001 C CNN "Characteristics"
-F 5 "" H 4305 4830 50  0001 C CNN "Config"
-	1    4305 4830
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3205 5280 3205 4980
 Wire Wire Line
@@ -324,47 +191,6 @@ Wire Wire Line
 	4305 4480 4955 4480
 Wire Wire Line
 	4955 5080 4955 5280
-$Comp
-L Device:R_Small R?
-U 1 1 5E5B2C3D
-P 4955 4980
-AR Path="/5D93F36E/5E5B2C3D" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E5B2C3D" Ref="R?"  Part="1" 
-AR Path="/5E5B2C3D" Ref="R11"  Part="1" 
-AR Path="/5E062BFC/5E5B2C3D" Ref="R?"  Part="1" 
-AR Path="/5E2107B4/5E062BFC/5E5B2C3D" Ref="R?"  Part="1" 
-AR Path="/5E5A3556/5E5B2C3D" Ref="R?"  Part="1" 
-F 0 "R11" H 4985 5000 50  0000 L CNN
-F 1 "1k" H 4985 4940 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4955 4980 50  0001 C CNN
-F 3 "" H 4955 4980 50  0001 C CNN
-F 4 "" H 4955 4980 50  0001 C CNN "Config"
-F 5 "5%" H 4955 4980 50  0001 C CNN "Characteristics"
-	1    4955 4980
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5E5B2C4A
-P 4955 4680
-AR Path="/5E5B2C4A" Ref="D1"  Part="1" 
-AR Path="/5E062BFC/5E5B2C4A" Ref="D?"  Part="1" 
-AR Path="/5E2107B4/5E062BFC/5E5B2C4A" Ref="D?"  Part="1" 
-AR Path="/5E5A3556/5E5B2C4A" Ref="D?"  Part="1" 
-F 0 "D1" H 4805 4780 50  0000 C CNN
-F 1 "PWK" H 5005 4780 50  0000 C CNN
-F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 4955 4680 60  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LZGCK.pdf" H 4955 4680 60  0001 C CNN
-F 4 "Kingbright" H 4955 4680 50  0001 C CNN "MFN"
-F 5 "APT1608LZGCK" H 4955 4680 50  0001 C CNN "MPN"
-F 6 "Green" H 4955 4680 50  0001 C CNN "Characteristics"
-F 7 "" H 4955 4680 50  0001 C CNN "Config"
-F 8 "Green 525nm LED Indication - Discrete 2.65V 0603 (1608 Metric)" H 4955 4680 50  0001 C CNN "Description"
-F 9 "754-1934-1-ND" H 4955 4680 50  0001 C CNN "SKU"
-F 10 "Digikey" H 4955 4680 50  0001 C CNN "Vendor"
-	1    4955 4680
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E5B2C50
@@ -429,26 +255,6 @@ F 3 "" H 4720 1770 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Zener D?
-U 1 1 5E5B2C71
-P 5865 2285
-AR Path="/5E5A3556/5E5B2C71" Ref="D?"  Part="1" 
-AR Path="/5E5B2C71" Ref="D6"  Part="1" 
-F 0 "D6" V 5819 2364 50  0000 L CNN
-F 1 "D22V0S1U2WS-7" V 5910 2364 50  0000 L CNN
-F 2 "KiCad/Diode_SMD.pretty:D_SOD-323" H 5865 2285 50  0001 C CNN
-F 3 "~" H 5865 2285 50  0001 C CNN
-F 4 "37V Clamp 30A (8/20µs) Ipp Tvs Diode Surface Mount SOD-323" H 5865 2285 50  0001 C CNN "Description"
-F 5 "Diodes Incorporated" H 5865 2285 50  0001 C CNN "MFN"
-F 6 "D22V0S1U2WS-7" H 5865 2285 50  0001 C CNN "MPN"
-F 7 "D22V0S1U2WS-7DICT-ND" H 5865 2285 50  0001 C CNN "SKU"
-F 8 "Digikey" H 5865 2285 50  0001 C CNN "Vendor"
-F 9 "22 V clamp" H 5865 2285 50  0001 C CNN "Characteristics"
-F 10 "" H 5865 2285 50  0001 C CNN "Config"
-	1    5865 2285
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5E5B2C77
 P 5865 2785
@@ -507,21 +313,6 @@ F 3 "" H 2855 9575 50  0001 C CNN
 	1    2855 9575
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5E63C069
-P 2255 7375
-AR Path="/5E5A3556/5E63C069" Ref="C?"  Part="1" 
-AR Path="/5E63C069" Ref="C3"  Part="1" 
-F 0 "C3" V 2205 7200 50  0000 L CNN
-F 1 "1μF" V 2205 7450 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 2293 7225 50  0001 C CNN
-F 3 "~" H 2255 7375 50  0001 C CNN
-F 4 "X5R 25V" H 2255 7375 50  0001 C CNN "Characteristics"
-F 5 "" H 2255 7375 50  0001 C CNN "Config"
-	1    2255 7375
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2605 7825 2605 7375
 Wire Wire Line
@@ -530,21 +321,6 @@ Wire Wire Line
 	2705 7825 2705 7175
 Wire Wire Line
 	2705 7175 2405 7175
-$Comp
-L Device:R R?
-U 1 1 5E63C073
-P 3805 9425
-AR Path="/5E5A3556/5E63C073" Ref="R?"  Part="1" 
-AR Path="/5E63C073" Ref="R2"  Part="1" 
-F 0 "R2" H 3874 9471 50  0000 L CNN
-F 1 "2k37" H 3874 9380 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" V 3735 9425 50  0001 C CNN
-F 3 "~" H 3805 9425 50  0001 C CNN
-F 4 "1%" H 3805 9425 50  0001 C CNN "Characteristics"
-F 5 "" H 3805 9425 50  0001 C CNN "Config"
-	1    3805 9425
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3655 9275 3805 9275
 $Comp
@@ -589,21 +365,6 @@ F 2 "" H 3105 6750 50  0001 C CNN
 F 3 "" H 3105 6750 50  0001 C CNN
 	1    3105 6750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E63C08E
-P 1905 8275
-AR Path="/5E5A3556/5E63C08E" Ref="R?"  Part="1" 
-AR Path="/5E63C08E" Ref="R1"  Part="1" 
-F 0 "R1" H 1974 8321 50  0000 L CNN
-F 1 "2k37" H 1974 8230 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" V 1835 8275 50  0001 C CNN
-F 3 "~" H 1905 8275 50  0001 C CNN
-F 4 "1%" H 1905 8275 50  0001 C CNN "Characteristics"
-F 5 "" H 1905 8275 50  0001 C CNN "Config"
-	1    1905 8275
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:VBUS #PWR?
@@ -673,90 +434,20 @@ F 3 "" H 3005 7700 50  0001 C CNN
 	1    3005 7700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5E63C0CC
-P 4355 7275
-AR Path="/5D93F36E/5E63C0CC" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E63C0CC" Ref="R?"  Part="1" 
-AR Path="/5E63C0CC" Ref="R3"  Part="1" 
-AR Path="/5E2107B4/5E63C0CC" Ref="R?"  Part="1" 
-AR Path="/5E5A3556/5E63C0CC" Ref="R?"  Part="1" 
-F 0 "R3" H 4385 7295 50  0000 L CNN
-F 1 "100k" H 4385 7235 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4355 7275 50  0001 C CNN
-F 3 "" H 4355 7275 50  0001 C CNN
-F 4 "5%" H 4355 7275 50  0001 C CNN "Characteristics"
-F 5 "" H 4355 7275 50  0001 C CNN "Config"
-	1    4355 7275
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4455 7075 4355 7075
 Wire Wire Line
 	4355 7075 4355 7175
 Wire Wire Line
 	4355 7375 4355 7475
-$Comp
-L Device:R_Small R?
-U 1 1 5E63C0D7
-P 4905 7475
-AR Path="/5D93F36E/5E63C0D7" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E63C0D7" Ref="R?"  Part="1" 
-AR Path="/5E63C0D7" Ref="R9"  Part="1" 
-AR Path="/5E2107B4/5E63C0D7" Ref="R?"  Part="1" 
-AR Path="/5E5A3556/5E63C0D7" Ref="R?"  Part="1" 
-F 0 "R9" V 5105 7425 50  0000 L CNN
-F 1 "100R" V 5005 7425 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4905 7475 50  0001 C CNN
-F 3 "" H 4905 7475 50  0001 C CNN
-F 4 "1%" H 4905 7475 50  0001 C CNN "Characteristics"
-F 5 "" H 4905 7475 50  0001 C CNN "Config"
-	1    4905 7475
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	5005 7475 5105 7475
 Wire Wire Line
 	5105 7075 4855 7075
-$Comp
-L Device:C C?
-U 1 1 5E63C0E8
-P 5105 7275
-AR Path="/5E5A3556/5E63C0E8" Ref="C?"  Part="1" 
-AR Path="/5E63C0E8" Ref="C5"  Part="1" 
-F 0 "C5" H 5220 7321 50  0000 L CNN
-F 1 "100n" H 5220 7230 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 5143 7125 50  0001 C CNN
-F 3 "~" H 5105 7275 50  0001 C CNN
-F 4 "" H 5105 7275 50  0001 C CNN "Description"
-F 5 "X5R 25V" H 5105 7275 50  0001 C CNN "Characteristics"
-F 6 "" H 5105 7275 50  0001 C CNN "Config"
-	1    5105 7275
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5105 7075 5105 7125
 Wire Wire Line
 	5105 7425 5105 7475
-$Comp
-L Device:R_Small R?
-U 1 1 5E63C0F0
-P 4355 7675
-AR Path="/5D93F36E/5E63C0F0" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E63C0F0" Ref="R?"  Part="1" 
-AR Path="/5E63C0F0" Ref="R4"  Part="1" 
-AR Path="/5E2107B4/5E63C0F0" Ref="R?"  Part="1" 
-AR Path="/5E5A3556/5E63C0F0" Ref="R?"  Part="1" 
-F 0 "R4" H 4385 7695 50  0000 L CNN
-F 1 "22k" H 4385 7635 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4355 7675 50  0001 C CNN
-F 3 "" H 4355 7675 50  0001 C CNN
-F 4 "5%" H 4355 7675 50  0001 C CNN "Characteristics"
-F 5 "" H 4355 7675 50  0001 C CNN "Config"
-	1    4355 7675
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4355 7475 4355 7575
 Connection ~ 4355 7475
@@ -764,24 +455,6 @@ Wire Wire Line
 	3655 8275 4355 8275
 Wire Wire Line
 	4355 8275 4355 7775
-$Comp
-L Device:R_Small R?
-U 1 1 5E63C0FA
-P 5555 7275
-AR Path="/5D93F36E/5E63C0FA" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E63C0FA" Ref="R?"  Part="1" 
-AR Path="/5E63C0FA" Ref="R10"  Part="1" 
-AR Path="/5E2107B4/5E63C0FA" Ref="R?"  Part="1" 
-AR Path="/5E5A3556/5E63C0FA" Ref="R?"  Part="1" 
-F 0 "R10" H 5585 7295 50  0000 L CNN
-F 1 "1k" H 5585 7235 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 5555 7275 50  0001 C CNN
-F 3 "" H 5555 7275 50  0001 C CNN
-F 4 "5%" H 5555 7275 50  0001 C CNN "Characteristics"
-F 5 "" H 5555 7275 50  0001 C CNN "Config"
-	1    5555 7275
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	5555 7375 5555 8375
 Wire Wire Line
@@ -796,36 +469,6 @@ Wire Wire Line
 Connection ~ 1905 7375
 Wire Wire Line
 	1905 7375 1905 7525
-$Comp
-L Device:C C?
-U 1 1 5E63C10A
-P 2255 7175
-AR Path="/5E5A3556/5E63C10A" Ref="C?"  Part="1" 
-AR Path="/5E63C10A" Ref="C2"  Part="1" 
-F 0 "C2" V 2305 7250 50  0000 L CNN
-F 1 "1μF" V 2305 6775 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 2293 7025 50  0001 C CNN
-F 3 "~" H 2255 7175 50  0001 C CNN
-F 4 "X5R 25V" H 2255 7175 50  0001 C CNN "Characteristics"
-F 5 "" H 2255 7175 50  0001 C CNN "Config"
-	1    2255 7175
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E63C110
-P 2255 6975
-AR Path="/5E5A3556/5E63C110" Ref="C?"  Part="1" 
-AR Path="/5E63C110" Ref="C1"  Part="1" 
-F 0 "C1" V 2305 7050 50  0000 L CNN
-F 1 "1μF" V 2305 6575 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 2293 6825 50  0001 C CNN
-F 3 "~" H 2255 6975 50  0001 C CNN
-F 4 "X5R 25V" H 2255 6975 50  0001 C CNN "Characteristics"
-F 5 "" H 2255 6975 50  0001 C CNN "Config"
-	1    2255 6975
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2105 6975 1905 6975
 Wire Wire Line
@@ -910,24 +553,6 @@ Wire Wire Line
 Wire Wire Line
 	6155 7075 6155 6755
 $Comp
-L Device:R_Small R?
-U 1 1 5E7E4BAB
-P 4585 8805
-AR Path="/5D93F36E/5E7E4BAB" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E7E4BAB" Ref="R?"  Part="1" 
-AR Path="/5E7E4BAB" Ref="R18"  Part="1" 
-AR Path="/5E2107B4/5E7E4BAB" Ref="R?"  Part="1" 
-AR Path="/5E5A3556/5E7E4BAB" Ref="R?"  Part="1" 
-F 0 "R18" H 4615 8825 50  0000 L CNN
-F 1 "4k7" H 4615 8765 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4585 8805 50  0001 C CNN
-F 3 "" H 4585 8805 50  0001 C CNN
-F 4 "1%" H 4585 8805 50  0001 C CNN "Characteristics"
-F 5 "" H 4585 8805 50  0001 C CNN "Config"
-	1    4585 8805
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 5E7E556F
 P 4585 8625
@@ -950,24 +575,6 @@ Wire Wire Line
 Connection ~ 4585 9075
 Wire Wire Line
 	4585 9075 4765 9075
-$Comp
-L Device:R_Small R?
-U 1 1 5E7E422D
-P 4425 8805
-AR Path="/5D93F36E/5E7E422D" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E7E422D" Ref="R?"  Part="1" 
-AR Path="/5E7E422D" Ref="R17"  Part="1" 
-AR Path="/5E2107B4/5E7E422D" Ref="R?"  Part="1" 
-AR Path="/5E5A3556/5E7E422D" Ref="R?"  Part="1" 
-F 0 "R17" H 4295 8835 50  0000 L CNN
-F 1 "4k7" H 4245 8765 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4425 8805 50  0001 C CNN
-F 3 "" H 4425 8805 50  0001 C CNN
-F 4 "1%" H 4425 8805 50  0001 C CNN "Characteristics"
-F 5 "" H 4425 8805 50  0001 C CNN "Config"
-	1    4425 8805
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5555 8375 3655 8375
 Wire Wire Line
@@ -980,26 +587,6 @@ Wire Wire Line
 	4585 8655 4585 8705
 Connection ~ 4585 8655
 NoConn ~ 3655 8875
-$Comp
-L Interface_CAN_LIN:SN65HVD230 U?
-U 1 1 5E6703D4
-P 10465 8025
-AR Path="/5E66BB0D/5E6703D4" Ref="U?"  Part="1" 
-AR Path="/5E6703D4" Ref="U3"  Part="1" 
-F 0 "U3" H 10345 8375 50  0000 C CNN
-F 1 "SN65HVD230" H 10155 8295 50  0000 C CNN
-F 2 "KiCad/Package_SO.pretty:SOIC-8_3.9x4.9mm_P1.27mm" H 10465 7525 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 10365 8425 50  0001 C CNN
-F 4 "IC TRANSCEIVER HALF 1/1 8SOIC" H 10465 8025 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 10465 8025 50  0001 C CNN "MFN"
-F 6 "SN65HVD230DR" H 10465 8025 50  0001 C CNN "MPN"
-F 7 "MCP2551 drop in replacement" H 10465 8025 50  0001 C CNN "Notes"
-F 8 "296-11654-1-ND" H 10465 8025 50  0001 C CNN "SKU"
-F 9 "Digikey" H 10465 8025 50  0001 C CNN "Vendor"
-F 10 "" H 10465 8025 50  0001 C CNN "Config"
-	1    10465 8025
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9645 7925 10065 7925
 Wire Wire Line
@@ -1062,18 +649,6 @@ F 3 "~" H 6215 7075 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C10
-U 1 1 5E77594D
-P 9010 2325
-F 0 "C10" H 9010 2425 40  0000 L CNN
-F 1 "4.7uF" H 9016 2240 40  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 9048 2175 30  0001 C CNN
-F 3 "" H 9010 2325 60  0000 C CNN
-F 4 "X5R 6V" H 9010 2325 50  0001 C CNN "Characteristics"
-	1    9010 2325
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0104
 U 1 1 5E775953
 P 8420 2725
@@ -1114,30 +689,6 @@ Wire Wire Line
 Wire Wire Line
 	8420 2475 8420 2625
 $Comp
-L Device:C C7
-U 1 1 5E77596B
-P 8420 2325
-F 0 "C7" H 8420 2425 40  0000 L CNN
-F 1 "1uF" H 8426 2240 40  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8458 2175 30  0001 C CNN
-F 3 "" H 8420 2325 60  0000 C CNN
-F 4 "X5R 25V" H 8420 2325 50  0001 C CNN "Characteristics"
-	1    8420 2325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 5E775972
-P 8620 2325
-F 0 "C8" H 8620 2425 40  0000 L CNN
-F 1 "1uF" H 8626 2240 40  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8658 2175 30  0001 C CNN
-F 3 "" H 8620 2325 60  0000 C CNN
-F 4 "X5R 25V" H 8620 2325 50  0001 C CNN "Characteristics"
-	1    8620 2325
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 5E775978
 P 8420 1625
@@ -1153,18 +704,6 @@ F 3 "" H 8420 1625 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8420 1625 8420 1725
-$Comp
-L Device:C C9
-U 1 1 5E775980
-P 8820 2325
-F 0 "C9" H 8820 2425 40  0000 L CNN
-F 1 "10uF" H 8826 2240 40  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8858 2175 30  0001 C CNN
-F 3 "" H 8820 2325 60  0000 C CNN
-F 4 "X5R 25V" H 8820 2325 50  0001 C CNN "Characteristics"
-	1    8820 2325
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8820 2025 9010 2025
 Wire Wire Line
@@ -1216,38 +755,6 @@ Text Label 11500 4855 2    60   ~ 0
 TXD1
 Text Label 11500 4955 2    60   ~ 0
 RXD1
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5E844ABA
-P 11500 4855
-AR Path="/5E844ABA" Ref="TP1"  Part="1" 
-AR Path="/5C65C880/5E844ABA" Ref="TP?"  Part="1" 
-AR Path="/5D93F36E/5E844ABA" Ref="TP?"  Part="1" 
-AR Path="/5D8BDE6F/5E844ABA" Ref="TP?"  Part="1" 
-F 0 "TP1" V 11500 5055 50  0000 L CNN
-F 1 "TestPoint" H 11558 4884 50  0001 L CNN
-F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4855 50  0001 C CNN
-F 3 "~" H 11700 4855 50  0001 C CNN
-F 4 "nofit" H 11500 4855 50  0001 C CNN "Config"
-	1    11500 4855
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5E844AC1
-P 11500 4955
-AR Path="/5E844AC1" Ref="TP2"  Part="1" 
-AR Path="/5C65C880/5E844AC1" Ref="TP?"  Part="1" 
-AR Path="/5D93F36E/5E844AC1" Ref="TP?"  Part="1" 
-AR Path="/5D8BDE6F/5E844AC1" Ref="TP?"  Part="1" 
-F 0 "TP2" V 11500 5155 50  0000 L CNN
-F 1 "TestPoint" H 11558 4984 50  0001 L CNN
-F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4955 50  0001 C CNN
-F 3 "~" H 11700 4955 50  0001 C CNN
-F 4 "nofit" H 11500 4955 50  0001 C CNN "Config"
-	1    11500 4955
-	0    1    1    0   
-$EndComp
 Text GLabel 11500 5055 2    50   Input ~ 0
 USB_N
 Text GLabel 11500 5155 2    50   Input ~ 0
@@ -1273,80 +780,12 @@ Wire Wire Line
 	9900 4755 9500 4755
 Wire Wire Line
 	9900 4855 9500 4855
-$Comp
-L Device:LED D3
-U 1 1 5E8931F0
-P 8750 4305
-F 0 "D3" H 8600 4405 50  0000 C CNN
-F 1 "STAT1" H 8800 4405 50  0000 C CNN
-F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 8750 4305 60  0001 C CNN
-F 3 "" H 8750 4305 60  0000 C CNN
-F 4 "Kingbright" H 8750 4305 50  0001 C CNN "MFN"
-F 5 "APT1608LZGCK" H 8750 4305 50  0001 C CNN "MPN"
-F 6 "Green" H 8750 4305 50  0001 C CNN "Characteristics"
-F 7 "Green 525nm LED Indication - Discrete 2.65V 0603 (1608 Metric)" H 8750 4305 50  0001 C CNN "Description"
-F 8 "754-1934-1-ND" H 8750 4305 50  0001 C CNN "SKU"
-F 9 "Digikey" H 8750 4305 50  0001 C CNN "Vendor"
-F 10 "" H 8750 4305 50  0001 C CNN "Config"
-	1    8750 4305
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5E8931F6
-P 8750 4655
-AR Path="/5D93F36E/5E8931F6" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E8931F6" Ref="R?"  Part="1" 
-AR Path="/5E8931F6" Ref="R6"  Part="1" 
-F 0 "R6" H 8780 4675 50  0000 L CNN
-F 1 "1k" H 8780 4615 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 8750 4655 50  0001 C CNN
-F 3 "" H 8750 4655 50  0001 C CNN
-F 4 "5%" H 8750 4655 50  0001 C CNN "Characteristics"
-F 5 "" H 8750 4655 50  0001 C CNN "Config"
-	1    8750 4655
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8750 4455 8750 4555
-$Comp
-L Device:R_Small R?
-U 1 1 5E8931FD
-P 8450 4655
-AR Path="/5D93F36E/5E8931FD" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E8931FD" Ref="R?"  Part="1" 
-AR Path="/5E8931FD" Ref="R5"  Part="1" 
-F 0 "R5" H 8480 4675 50  0000 L CNN
-F 1 "1k" H 8480 4615 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 8450 4655 50  0001 C CNN
-F 3 "" H 8450 4655 50  0001 C CNN
-F 4 "5%" H 8450 4655 50  0001 C CNN "Characteristics"
-F 5 "" H 8450 4655 50  0001 C CNN "Config"
-	1    8450 4655
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8450 4055 8450 4155
 Wire Wire Line
 	8450 4455 8450 4555
-$Comp
-L Device:LED D2
-U 1 1 5E893208
-P 8450 4305
-F 0 "D2" H 8300 4405 50  0000 C CNN
-F 1 "STAT2" H 8550 4405 50  0000 C CNN
-F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 8450 4305 60  0001 C CNN
-F 3 "" H 8450 4305 60  0000 C CNN
-F 4 "Kingbright" H 8450 4305 50  0001 C CNN "MFN"
-F 5 "APT1608LSECK/J4-PRV" H 8450 4305 50  0001 C CNN "MPN"
-F 6 "Orange" H 8450 4305 50  0001 C CNN "Characteristics"
-F 7 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric)" H 8450 4305 50  0001 C CNN "Description"
-F 8 "754-1931-1-ND" H 8450 4305 50  0001 C CNN "SKU"
-F 9 "Digikey" H 8450 4305 50  0001 C CNN "Vendor"
-F 10 "" H 8450 4305 50  0001 C CNN "Config"
-	1    8450 4305
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	9900 3955 8750 3955
 Wire Wire Line
@@ -1464,23 +903,6 @@ Wire Wire Line
 Connection ~ 10400 5715
 Wire Wire Line
 	10400 5715 10500 5715
-$Comp
-L JBR_ICs:STL6P3LLH6 Q?
-U 1 1 5E63C0DF
-P 4655 7175
-AR Path="/5E5A3556/5E63C0DF" Ref="Q?"  Part="1" 
-AR Path="/5E63C0DF" Ref="Q1"  Part="1" 
-F 0 "Q1" V 4997 7175 50  0000 C CNN
-F 1 "STL6P3LLH6" V 4906 7175 50  0000 C CNN
-F 2 "tunaf1sh/misc.pretty:TRANS_STL6P3LLH6" H 4855 7275 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/3c/90/16/29/a8/76/48/02/DM00064617.pdf/files/DM00064617.pdf/jcr:content/translations/en.DM00064617.pdf" H 4655 7175 50  0001 C CNN
-F 4 "STMicroelectronics" H 4655 7175 50  0001 C CNN "MFN"
-F 5 "STL6P3LLH6" H 4655 7175 50  0001 C CNN "MPN"
-F 6 "Digikey" H 4655 7175 50  0001 C CNN "Vendor"
-F 7 "497-15315-1-ND" H 4655 7175 50  0001 C CNN "SKU"
-	1    4655 7175
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4355 7475 4555 7475
 Wire Wire Line
@@ -1494,24 +916,6 @@ Wire Wire Line
 	11100 5455 11510 5455
 Connection ~ 2055 8825
 Connection ~ 2055 8725
-$Comp
-L JBR_ICs:STUSB4500 U?
-U 1 1 5E63C0A4
-P 2855 8775
-AR Path="/5E5A3556/5E63C0A4" Ref="U?"  Part="1" 
-AR Path="/5E63C0A4" Ref="U1"  Part="1" 
-F 0 "U1" H 3155 8025 50  0000 C CNN
-F 1 "STUSB4500QTR" H 3155 8125 50  0000 C CNN
-F 2 "KiCad/Package_DFN_QFN.pretty:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 2855 7600 50  0001 C CNN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwjMucG-xf7nAhVEhlwKHZwiBt0QFjABegQIBhAC&url=https%3A%2F%2Fwww.st.com%2Fresource%2Fen%2Fdatasheet%2Fstusb4500.pdf&usg=AOvVaw20vMqUU6zknpHuLJ7eGwwd" H 2855 8775 50  0001 C CNN
-F 4 "STMicroelectronics" H 2855 8775 50  0001 C CNN "MFN"
-F 5 "STUSB4500QTR" H 2855 8775 50  0001 C CNN "MPN"
-F 6 "497-18060-1-ND" H 2855 8775 50  0001 C CNN "SKU"
-F 7 "Digikey" H 2855 8775 50  0001 C CNN "Vendor"
-F 8 "IC USB CONTROLLER I2C 24QFN " H 2855 8775 50  0001 C CNN "Description"
-	1    2855 8775
-	1    0    0    -1  
-$EndComp
 Text GLabel 3815 9175 2    50   Input ~ 0
 ALERT
 Wire Wire Line
@@ -1536,23 +940,6 @@ Wire Wire Line
 Wire Wire Line
 	9450 2990 7840 2990
 Connection ~ 7840 2990
-$Comp
-L MCU_ST_STM32F0:STM32F042C6Ux U2
-U 1 1 5E7605FC
-P 10500 4155
-F 0 "U2" H 10820 5605 50  0000 C CNN
-F 1 "STM32F042C6Ux" H 11080 5525 50  0000 C CNN
-F 2 "KiCad/Package_DFN_QFN.pretty:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 10000 2755 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 10500 4155 50  0001 C CNN
-F 4 "IC MCU 32BIT 32KB FLASH 48UFQFPN" H 10500 4155 50  0001 C CNN "Description"
-F 5 "STMicroelectronics" H 10500 4155 50  0001 C CNN "MFN"
-F 6 "STM32F042C6U6" H 10500 4155 50  0001 C CNN "MPN"
-F 7 "497-17342-ND" H 10500 4155 50  0001 C CNN "SKU"
-F 8 "Digikey" H 10500 4155 50  0001 C CNN "Vendor"
-F 9 "" H 10500 4155 50  0001 C CNN "Config"
-	1    10500 4155
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4220 2170 4320 2170
 Wire Wire Line
@@ -1613,46 +1000,6 @@ Wire Wire Line
 Connection ~ 8230 3325
 Wire Wire Line
 	8230 3375 8230 3325
-$Comp
-L Device:C_Small C13
-U 1 1 5F259FB1
-P 8930 3475
-F 0 "C13" H 8940 3545 50  0000 L CNN
-F 1 "15pF" H 8940 3395 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8930 3475 50  0001 C CNN
-F 3 "" H 8930 3475 50  0001 C CNN
-F 4 "6 V NPO" H 8930 3475 50  0001 C CNN "Characteristics"
-	1    8930 3475
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C12
-U 1 1 5F259FAA
-P 8230 3475
-F 0 "C12" H 8240 3545 50  0000 L CNN
-F 1 "15pF" H 8240 3395 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8230 3475 50  0001 C CNN
-F 3 "" H 8230 3475 50  0001 C CNN
-F 4 "6 V NPO" H 8230 3475 50  0001 C CNN "Characteristics"
-	1    8230 3475
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Crystal Y1
-U 1 1 5F259FA3
-P 8580 3325
-F 0 "Y1" H 8580 3475 50  0000 C CNN
-F 1 "32.768" H 8580 3175 50  0000 C CNN
-F 2 "KiCad/Crystal.pretty:Crystal_SMD_2012-2Pin_2.0x1.2mm" H 8580 3325 50  0001 C CNN
-F 3 "https://docs-emea.rs-online.com/webdocs/0f59/0900766b80f59f41.pdf" H 8580 3325 50  0001 C CNN
-F 4 "Abracon LLC" H 8580 3325 60  0001 C CNN "MFN"
-F 5 "ABS06-127-32.768KHZ-T" H 8580 3325 50  0001 C CNN "MPN"
-F 6 "IOT 32.786KHZ XTAL" H 8580 3325 50  0001 C CNN "Description"
-F 7 "535-14513-1-ND" H 8580 3325 50  0001 C CNN "SKU"
-F 8 "Digikey" H 8580 3325 50  0001 C CNN "Vendor"
-	1    8580 3325
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4720 1870 4720 1770
 Wire Wire Line
@@ -1702,86 +1049,6 @@ Wire Wire Line
 	13690 5350 14085 5350
 Text Label 13690 5350 0    60   ~ 0
 NRST
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5FDFFA0E
-P 11500 3955
-AR Path="/5FDFFA0E" Ref="TP3"  Part="1" 
-AR Path="/5C65C880/5FDFFA0E" Ref="TP?"  Part="1" 
-AR Path="/5D93F36E/5FDFFA0E" Ref="TP?"  Part="1" 
-AR Path="/5D8BDE6F/5FDFFA0E" Ref="TP?"  Part="1" 
-F 0 "TP3" V 11500 4155 50  0000 L CNN
-F 1 "TestPoint" H 11558 3984 50  0001 L CNN
-F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 3955 50  0001 C CNN
-F 3 "~" H 11700 3955 50  0001 C CNN
-F 4 "nofit" H 11500 3955 50  0001 C CNN "Config"
-	1    11500 3955
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5FE0050F
-P 11500 4055
-AR Path="/5FE0050F" Ref="TP4"  Part="1" 
-AR Path="/5C65C880/5FE0050F" Ref="TP?"  Part="1" 
-AR Path="/5D93F36E/5FE0050F" Ref="TP?"  Part="1" 
-AR Path="/5D8BDE6F/5FE0050F" Ref="TP?"  Part="1" 
-F 0 "TP4" V 11500 4255 50  0000 L CNN
-F 1 "TestPoint" H 11558 4084 50  0001 L CNN
-F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4055 50  0001 C CNN
-F 3 "~" H 11700 4055 50  0001 C CNN
-F 4 "nofit" H 11500 4055 50  0001 C CNN "Config"
-	1    11500 4055
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP7
-U 1 1 5FE00B14
-P 11500 4155
-AR Path="/5FE00B14" Ref="TP7"  Part="1" 
-AR Path="/5C65C880/5FE00B14" Ref="TP?"  Part="1" 
-AR Path="/5D93F36E/5FE00B14" Ref="TP?"  Part="1" 
-AR Path="/5D8BDE6F/5FE00B14" Ref="TP?"  Part="1" 
-F 0 "TP7" V 11500 4355 50  0000 L CNN
-F 1 "TestPoint" H 11558 4184 50  0001 L CNN
-F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4155 50  0001 C CNN
-F 3 "~" H 11700 4155 50  0001 C CNN
-F 4 "nofit" H 11500 4155 50  0001 C CNN "Config"
-	1    11500 4155
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5FE01001
-P 11500 4255
-AR Path="/5FE01001" Ref="TP8"  Part="1" 
-AR Path="/5C65C880/5FE01001" Ref="TP?"  Part="1" 
-AR Path="/5D93F36E/5FE01001" Ref="TP?"  Part="1" 
-AR Path="/5D8BDE6F/5FE01001" Ref="TP?"  Part="1" 
-F 0 "TP8" V 11500 4455 50  0000 L CNN
-F 1 "TestPoint" H 11558 4284 50  0001 L CNN
-F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4255 50  0001 C CNN
-F 3 "~" H 11700 4255 50  0001 C CNN
-F 4 "nofit" H 11500 4255 50  0001 C CNN "Config"
-	1    11500 4255
-	0    1    1    0   
-$EndComp
-$Comp
-L Switch:SW_DIP_x04 SW1
-U 1 1 5FE2A931
-P 13705 2455
-F 0 "SW1" H 13705 2922 50  0000 C CNN
-F 1 "SW_DIP_x04" H 13705 2831 50  0000 C CNN
-F 2 "KiCad/Button_Switch_SMD.pretty:SW_DIP_SPSTx04_Slide_Copal_CHS-04A_W5.08mm_P1.27mm_JPin" H 13705 2455 50  0001 C CNN
-F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf" H 13705 2455 50  0001 C CNN
-F 4 "Nidec Copal Electronics" H 13705 2455 50  0001 C CNN "MFN"
-F 5 "CHS-04TA" H 13705 2455 50  0001 C CNN "MPN"
-F 6 "Dip Switch SPST 4 Position Surface Mount Slide (Standard) Actuator 100mA 6VDC" H 13705 2455 50  0001 C CNN "Description"
-F 7 "Digikey" H 13705 2455 50  0001 C CNN "Vendor"
-F 8 "563-1007-1-ND" H 13705 2455 50  0001 C CNN "SKU"
-	1    13705 2455
-	1    0    0    -1  
-$EndComp
 Text GLabel 11290 8025 2    50   BiDi ~ 0
 CAN_+
 Wire Wire Line
@@ -1792,19 +1059,6 @@ Wire Wire Line
 	11290 8125 10865 8125
 Text GLabel 13405 2555 0    50   BiDi ~ 0
 CAN_+
-$Comp
-L Device:R_Small R8
-U 1 1 5D8D4C90
-P 14640 2655
-F 0 "R8" V 14705 2690 50  0000 L CNN
-F 1 "120R" V 14705 2470 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 14640 2655 50  0001 C CNN
-F 3 "~" H 14640 2655 50  0001 C CNN
-F 4 "Termination resistor. Bring in circuit with DIP switch." H 14640 2655 50  0001 C CNN "Notes"
-F 5 "1%" H 14640 2655 50  0001 C CNN "Characteristics"
-	1    14640 2655
-	0    -1   -1   0   
-$EndComp
 Text GLabel 14855 2655 2    50   BiDi ~ 0
 CAN_-
 Wire Wire Line
@@ -1815,22 +1069,6 @@ Text Label 7690 2990 2    60   ~ 0
 BOOT
 Text Label 14005 2255 0    60   ~ 0
 BOOT
-$Comp
-L Device:R_Small R?
-U 1 1 5FEE5208
-P 7840 3200
-AR Path="/5D93F36E/5FEE5208" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5FEE5208" Ref="R?"  Part="1" 
-AR Path="/5FEE5208" Ref="R7"  Part="1" 
-F 0 "R7" H 7870 3220 50  0000 L CNN
-F 1 "1k" H 7870 3160 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 7840 3200 50  0001 C CNN
-F 3 "" H 7840 3200 50  0001 C CNN
-F 4 "5%" H 7840 3200 50  0001 C CNN "Characteristics"
-F 5 "" H 7840 3200 50  0001 C CNN "Config"
-	1    7840 3200
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	7840 2990 7840 3100
 Wire Wire Line
@@ -1852,22 +1090,6 @@ F 3 "" H 14290 2995 60  0000 C CNN
 	1    14290 2995
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FF2A019
-P 14290 2815
-AR Path="/5D93F36E/5FF2A019" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5FF2A019" Ref="R?"  Part="1" 
-AR Path="/5FF2A019" Ref="R14"  Part="1" 
-F 0 "R14" H 14320 2835 50  0000 L CNN
-F 1 "1k" H 14320 2775 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 14290 2815 50  0001 C CNN
-F 3 "" H 14290 2815 50  0001 C CNN
-F 4 "5%" H 14290 2815 50  0001 C CNN "Characteristics"
-F 5 "" H 14290 2815 50  0001 C CNN "Config"
-	1    14290 2815
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	14290 2915 14290 2995
 Wire Wire Line
@@ -1875,43 +1097,10 @@ Wire Wire Line
 Connection ~ 14290 2355
 Wire Wire Line
 	14290 2355 14410 2355
-$Comp
-L Device:D_Schottky D4
-U 1 1 5FCDB11E
-P 5875 7075
-F 0 "D4" H 5875 6858 50  0000 C CNN
-F 1 "MBR130T1G" H 5875 6949 50  0000 C CNN
-F 2 "KiCad/Diode_SMD.pretty:D_SOD-123" H 5875 7075 50  0001 C CNN
-F 3 "~" H 5875 7075 50  0001 C CNN
-F 4 "ON Semiconductor" H 5875 7075 50  0001 C CNN "MFN"
-F 5 "MBR130T1G" H 5875 7075 50  0001 C CNN "MPN"
-F 6 "Diode Schottky 30V 1A Surface Mount SOD-123" H 5875 7075 50  0001 C CNN "Description"
-F 7 "Digikey" H 5875 7075 50  0001 C CNN "Vendor"
-F 8 " MBR130T1GOSTR-ND " H 5875 7075 50  0001 C CNN "SKU"
-F 9 "30 V 1 A" H 5875 7075 50  0001 C CNN "Characteristics"
-F 10 "VDD -> VBUS back power protection" H 5875 7075 50  0001 C CNN "Notes"
-	1    5875 7075
-	-1   0    0    1   
-$EndComp
 Text GLabel 7200 9625 2    50   Input ~ 0
 POWER_OK3
 Text GLabel 6800 9625 0    50   Input ~ 0
 POWER_OK2
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP?
-U 1 1 5E63C12E
-P 7000 9625
-AR Path="/5E2083AD/5E63C12E" Ref="JP?"  Part="1" 
-AR Path="/5E63C12E" Ref="JP1"  Part="1" 
-AR Path="/5E5A3556/5E63C12E" Ref="JP?"  Part="1" 
-F 0 "JP1" H 7000 9725 50  0000 C CNN
-F 1 "POK1/[POK2]" H 7000 9739 50  0001 C CNN
-F 2 "KiCad/Jumper.pretty:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 7000 9625 50  0001 C CNN
-F 3 "~" H 7000 9625 50  0001 C CNN
-F 4 "nofit" H 7000 9625 50  0001 C CNN "Config"
-	1    7000 9625
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7000 8675 7000 8825
 $Comp
@@ -1927,47 +1116,8 @@ F 3 "" H 7000 8675 50  0001 C CNN
 	1    7000 8675
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5E63C13B
-P 7000 9325
-AR Path="/5D93F36E/5E63C13B" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5E63C13B" Ref="R?"  Part="1" 
-AR Path="/5E63C13B" Ref="R12"  Part="1" 
-AR Path="/5E2107B4/5E63C13B" Ref="R?"  Part="1" 
-AR Path="/5E5A3556/5E63C13B" Ref="R?"  Part="1" 
-F 0 "R12" H 7030 9345 50  0000 L CNN
-F 1 "1k" H 7030 9285 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 7000 9325 50  0001 C CNN
-F 3 "" H 7000 9325 50  0001 C CNN
-F 4 "5%" H 7000 9325 50  0001 C CNN "Characteristics"
-F 5 "" H 7000 9325 50  0001 C CNN "Config"
-	1    7000 9325
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7000 9125 7000 9225
-$Comp
-L Device:LED D?
-U 1 1 5E63C148
-P 7000 8975
-AR Path="/5E2107B4/5E63C148" Ref="D?"  Part="1" 
-AR Path="/5E63C148" Ref="D5"  Part="1" 
-AR Path="/5E5A3556/5E63C148" Ref="D?"  Part="1" 
-F 0 "D5" H 6850 9075 50  0000 C CNN
-F 1 "PDOK" H 7100 9075 50  0000 C CNN
-F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 7000 8975 60  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf" H 7000 8975 60  0001 C CNN
-F 4 "Kingbright" H 7000 8975 50  0001 C CNN "MFN"
-F 5 "APT1608LSECK/J4-PRV" H 7000 8975 50  0001 C CNN "MPN"
-F 6 "1.8 V 2 mA 50 mc" H 7000 8975 50  0001 C CNN "Characteristics"
-F 7 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric)" H 7000 8975 50  0001 C CNN "Description"
-F 8 "754-1931-1-ND" H 7000 8975 50  0001 C CNN "SKU"
-F 9 "Digikey" H 7000 8975 50  0001 C CNN "Vendor"
-F 10 "" H 7000 8975 50  0001 C CNN "Config"
-	1    7000 8975
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7000 9425 7000 9475
 Wire Wire Line
@@ -1991,22 +1141,6 @@ F 3 "" H 14095 2995 60  0000 C CNN
 	1    14095 2995
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FE02F24
-P 14095 2815
-AR Path="/5D93F36E/5FE02F24" Ref="R?"  Part="1" 
-AR Path="/5D8BDE6F/5FE02F24" Ref="R?"  Part="1" 
-AR Path="/5FE02F24" Ref="R13"  Part="1" 
-F 0 "R13" H 14125 2835 50  0000 L CNN
-F 1 "1k" H 14125 2775 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 14095 2815 50  0001 C CNN
-F 3 "" H 14095 2815 50  0001 C CNN
-F 4 "5%" H 14095 2815 50  0001 C CNN "Characteristics"
-F 5 "" H 14095 2815 50  0001 C CNN "Config"
-	1    14095 2815
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	14095 2915 14095 2995
 Wire Wire Line
@@ -2027,21 +1161,6 @@ Wire Wire Line
 NoConn ~ 10300 2755
 Wire Wire Line
 	2825 4480 3205 4480
-$Comp
-L Connector_Generic:Conn_01x06 J6
-U 1 1 5DB87EB1
-P 14285 5350
-F 0 "J6" H 14365 5342 50  0000 L CNN
-F 1 "SWD" H 14365 5251 50  0000 L CNN
-F 2 "KiCad/Connector.pretty:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 14285 5350 50  0001 C CNN
-F 3 "~" H 14285 5350 50  0001 C CNN
-F 4 "Tag-Connect" H 14285 5350 50  0001 C CNN "MFN"
-F 5 "TC2030-NL" H 14285 5350 50  0001 C CNN "MPN"
-F 6 "Use with TC2030-CTX cable and Cortex programmer" H 14285 5350 50  0001 C CNN "Notes"
-F 7 "nofit" H 14285 5350 50  0001 C CNN "Config"
-	1    14285 5350
-	1    0    0    -1  
-$EndComp
 NoConn ~ 14085 5650
 Wire Wire Line
 	5105 7075 5555 7075
@@ -2100,6 +1219,22 @@ Wire Wire Line
 Wire Wire Line
 	14260 8425 13960 8425
 $Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5FCF5854
+P 14460 8425
+F 0 "J2" H 14568 8706 50  0000 C CNN
+F 1 "JST SM04B" H 14460 8135 50  0000 C CNN
+F 2 "KiCad/Connector_JST.pretty:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 14460 8425 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 14460 8425 50  0001 C CNN
+F 4 "JST" H 14460 8425 50  0001 C CNN "MFN"
+F 5 "SM04B-SRSS-TB(LF)(SN)" H 14460 8425 50  0001 C CNN "MPN"
+F 6 "Digikey" H 14460 8425 50  0001 C CNN "Vendor"
+F 7 "455-1804-1-ND" H 14460 8425 50  0001 C CNN "SKU"
+F 8 "dnf" H 14460 8425 50  0001 C CNN "Config"
+	1    14460 8425
+	-1   0    0    -1  
+$EndComp
+$Comp
 L Connector:Conn_01x04_Male J3
 U 1 1 5E604297
 P 14475 7230
@@ -2115,19 +1250,884 @@ F 7 "WM7622CT-ND" H 14475 7230 50  0001 C CNN "SKU"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J2
-U 1 1 5FCF5854
-P 14460 8425
-F 0 "J2" H 14568 8706 50  0000 C CNN
-F 1 "JST SM04B" H 14460 8135 50  0000 C CNN
-F 2 "KiCad/Connector_JST.pretty:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 14460 8425 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 14460 8425 50  0001 C CNN
-F 4 "JST" H 14460 8425 50  0001 C CNN "MFN"
-F 5 "SM04B-SRSS-TB(LF)(SN)" H 14460 8425 50  0001 C CNN "MPN"
-F 6 "Digikey" H 14460 8425 50  0001 C CNN "Vendor"
-F 7 "455-1804-1-ND" H 14460 8425 50  0001 C CNN "SKU"
-F 8 "dnf" H 14460 8425 50  0001 C CNN "Config"
-	1    14460 8425
+L Connector_Generic:Conn_01x06 J6
+U 1 1 5DB87EB1
+P 14285 5350
+F 0 "J6" H 14365 5342 50  0000 L CNN
+F 1 "SWD" H 14365 5251 50  0000 L CNN
+F 2 "KiCad/Connector.pretty:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 14285 5350 50  0001 C CNN
+F 3 "~" H 14285 5350 50  0001 C CNN
+F 4 "Tag-Connect" H 14285 5350 50  0001 C CNN "MFN"
+F 5 "TC2030-NL" H 14285 5350 50  0001 C CNN "MPN"
+F 6 "Use with TC2030-CTX cable and Cortex programmer" H 14285 5350 50  0001 C CNN "Notes"
+F 7 "nofit" H 14285 5350 50  0001 C CNN "Config"
+	1    14285 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FE02F24
+P 14095 2815
+AR Path="/5D93F36E/5FE02F24" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5FE02F24" Ref="R?"  Part="1" 
+AR Path="/5FE02F24" Ref="R13"  Part="1" 
+F 0 "R13" H 14125 2835 50  0000 L CNN
+F 1 "1k" H 14125 2775 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 14095 2815 50  0001 C CNN
+F 3 "" H 14095 2815 50  0001 C CNN
+F 4 "5%" H 14095 2815 50  0001 C CNN "Characteristics"
+F 5 "" H 14095 2815 50  0001 C CNN "Config"
+	1    14095 2815
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E63C148
+P 7000 8975
+AR Path="/5E2107B4/5E63C148" Ref="D?"  Part="1" 
+AR Path="/5E63C148" Ref="D5"  Part="1" 
+AR Path="/5E5A3556/5E63C148" Ref="D?"  Part="1" 
+F 0 "D5" H 6850 9075 50  0000 C CNN
+F 1 "PDOK" H 7100 9075 50  0000 C CNN
+F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 7000 8975 60  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf" H 7000 8975 60  0001 C CNN
+F 4 "Kingbright" H 7000 8975 50  0001 C CNN "MFN"
+F 5 "APT1608LSECK/J4-PRV" H 7000 8975 50  0001 C CNN "MPN"
+F 6 "1.8 V 2 mA 50 mc" H 7000 8975 50  0001 C CNN "Characteristics"
+F 7 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric)" H 7000 8975 50  0001 C CNN "Description"
+F 8 "754-1931-1-ND" H 7000 8975 50  0001 C CNN "SKU"
+F 9 "Digikey" H 7000 8975 50  0001 C CNN "Vendor"
+F 10 "" H 7000 8975 50  0001 C CNN "Config"
+	1    7000 8975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E63C13B
+P 7000 9325
+AR Path="/5D93F36E/5E63C13B" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E63C13B" Ref="R?"  Part="1" 
+AR Path="/5E63C13B" Ref="R12"  Part="1" 
+AR Path="/5E2107B4/5E63C13B" Ref="R?"  Part="1" 
+AR Path="/5E5A3556/5E63C13B" Ref="R?"  Part="1" 
+F 0 "R12" H 7030 9345 50  0000 L CNN
+F 1 "1k" H 7030 9285 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 7000 9325 50  0001 C CNN
+F 3 "" H 7000 9325 50  0001 C CNN
+F 4 "5%" H 7000 9325 50  0001 C CNN "Characteristics"
+F 5 "" H 7000 9325 50  0001 C CNN "Config"
+	1    7000 9325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP?
+U 1 1 5E63C12E
+P 7000 9625
+AR Path="/5E2083AD/5E63C12E" Ref="JP?"  Part="1" 
+AR Path="/5E63C12E" Ref="JP1"  Part="1" 
+AR Path="/5E5A3556/5E63C12E" Ref="JP?"  Part="1" 
+F 0 "JP1" H 7000 9725 50  0000 C CNN
+F 1 "POK1/[POK2]" H 7000 9739 50  0001 C CNN
+F 2 "KiCad/Jumper.pretty:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 7000 9625 50  0001 C CNN
+F 3 "~" H 7000 9625 50  0001 C CNN
+F 4 "nofit" H 7000 9625 50  0001 C CNN "Config"
+	1    7000 9625
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky D4
+U 1 1 5FCDB11E
+P 5875 7075
+F 0 "D4" H 5875 6858 50  0000 C CNN
+F 1 "MBR130T1G" H 5875 6949 50  0000 C CNN
+F 2 "KiCad/Diode_SMD.pretty:D_SOD-123" H 5875 7075 50  0001 C CNN
+F 3 "~" H 5875 7075 50  0001 C CNN
+F 4 "ON Semiconductor" H 5875 7075 50  0001 C CNN "MFN"
+F 5 "MBR130T1G" H 5875 7075 50  0001 C CNN "MPN"
+F 6 "Diode Schottky 30V 1A Surface Mount SOD-123" H 5875 7075 50  0001 C CNN "Description"
+F 7 "Digikey" H 5875 7075 50  0001 C CNN "Vendor"
+F 8 " MBR130T1GOSTR-ND " H 5875 7075 50  0001 C CNN "SKU"
+F 9 "30 V 1 A" H 5875 7075 50  0001 C CNN "Characteristics"
+F 10 "VDD -> VBUS back power protection" H 5875 7075 50  0001 C CNN "Notes"
+	1    5875 7075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF2A019
+P 14290 2815
+AR Path="/5D93F36E/5FF2A019" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5FF2A019" Ref="R?"  Part="1" 
+AR Path="/5FF2A019" Ref="R14"  Part="1" 
+F 0 "R14" H 14320 2835 50  0000 L CNN
+F 1 "1k" H 14320 2775 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 14290 2815 50  0001 C CNN
+F 3 "" H 14290 2815 50  0001 C CNN
+F 4 "5%" H 14290 2815 50  0001 C CNN "Characteristics"
+F 5 "" H 14290 2815 50  0001 C CNN "Config"
+	1    14290 2815
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FEE5208
+P 7840 3200
+AR Path="/5D93F36E/5FEE5208" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5FEE5208" Ref="R?"  Part="1" 
+AR Path="/5FEE5208" Ref="R7"  Part="1" 
+F 0 "R7" H 7870 3220 50  0000 L CNN
+F 1 "1k" H 7870 3160 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 7840 3200 50  0001 C CNN
+F 3 "" H 7840 3200 50  0001 C CNN
+F 4 "5%" H 7840 3200 50  0001 C CNN "Characteristics"
+F 5 "" H 7840 3200 50  0001 C CNN "Config"
+	1    7840 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5D8D4C90
+P 14640 2655
+F 0 "R8" V 14705 2690 50  0000 L CNN
+F 1 "120R" V 14705 2470 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 14640 2655 50  0001 C CNN
+F 3 "~" H 14640 2655 50  0001 C CNN
+F 4 "Termination resistor. Bring in circuit with DIP switch." H 14640 2655 50  0001 C CNN "Notes"
+F 5 "1%" H 14640 2655 50  0001 C CNN "Characteristics"
+	1    14640 2655
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_DIP_x04 SW1
+U 1 1 5FE2A931
+P 13705 2455
+F 0 "SW1" H 13705 2922 50  0000 C CNN
+F 1 "SW_DIP_x04" H 13705 2831 50  0000 C CNN
+F 2 "KiCad/Button_Switch_SMD.pretty:SW_DIP_SPSTx04_Slide_Copal_CHS-04A_W5.08mm_P1.27mm_JPin" H 13705 2455 50  0001 C CNN
+F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf" H 13705 2455 50  0001 C CNN
+F 4 "Nidec Copal Electronics" H 13705 2455 50  0001 C CNN "MFN"
+F 5 "CHS-04TA" H 13705 2455 50  0001 C CNN "MPN"
+F 6 "Dip Switch SPST 4 Position Surface Mount Slide (Standard) Actuator 100mA 6VDC" H 13705 2455 50  0001 C CNN "Description"
+F 7 "Digikey" H 13705 2455 50  0001 C CNN "Vendor"
+F 8 "563-1007-1-ND" H 13705 2455 50  0001 C CNN "SKU"
+	1    13705 2455
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5FE01001
+P 11500 4255
+AR Path="/5FE01001" Ref="TP8"  Part="1" 
+AR Path="/5C65C880/5FE01001" Ref="TP?"  Part="1" 
+AR Path="/5D93F36E/5FE01001" Ref="TP?"  Part="1" 
+AR Path="/5D8BDE6F/5FE01001" Ref="TP?"  Part="1" 
+F 0 "TP8" V 11500 4455 50  0000 L CNN
+F 1 "TestPoint" H 11558 4284 50  0001 L CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4255 50  0001 C CNN
+F 3 "~" H 11700 4255 50  0001 C CNN
+F 4 "nofit" H 11500 4255 50  0001 C CNN "Config"
+	1    11500 4255
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5FE00B14
+P 11500 4155
+AR Path="/5FE00B14" Ref="TP7"  Part="1" 
+AR Path="/5C65C880/5FE00B14" Ref="TP?"  Part="1" 
+AR Path="/5D93F36E/5FE00B14" Ref="TP?"  Part="1" 
+AR Path="/5D8BDE6F/5FE00B14" Ref="TP?"  Part="1" 
+F 0 "TP7" V 11500 4355 50  0000 L CNN
+F 1 "TestPoint" H 11558 4184 50  0001 L CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4155 50  0001 C CNN
+F 3 "~" H 11700 4155 50  0001 C CNN
+F 4 "nofit" H 11500 4155 50  0001 C CNN "Config"
+	1    11500 4155
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5FE0050F
+P 11500 4055
+AR Path="/5FE0050F" Ref="TP4"  Part="1" 
+AR Path="/5C65C880/5FE0050F" Ref="TP?"  Part="1" 
+AR Path="/5D93F36E/5FE0050F" Ref="TP?"  Part="1" 
+AR Path="/5D8BDE6F/5FE0050F" Ref="TP?"  Part="1" 
+F 0 "TP4" V 11500 4255 50  0000 L CNN
+F 1 "TestPoint" H 11558 4084 50  0001 L CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4055 50  0001 C CNN
+F 3 "~" H 11700 4055 50  0001 C CNN
+F 4 "nofit" H 11500 4055 50  0001 C CNN "Config"
+	1    11500 4055
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5FDFFA0E
+P 11500 3955
+AR Path="/5FDFFA0E" Ref="TP3"  Part="1" 
+AR Path="/5C65C880/5FDFFA0E" Ref="TP?"  Part="1" 
+AR Path="/5D93F36E/5FDFFA0E" Ref="TP?"  Part="1" 
+AR Path="/5D8BDE6F/5FDFFA0E" Ref="TP?"  Part="1" 
+F 0 "TP3" V 11500 4155 50  0000 L CNN
+F 1 "TestPoint" H 11558 3984 50  0001 L CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 3955 50  0001 C CNN
+F 3 "~" H 11700 3955 50  0001 C CNN
+F 4 "nofit" H 11500 3955 50  0001 C CNN "Config"
+	1    11500 3955
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5F259FA3
+P 8580 3325
+F 0 "Y1" H 8580 3475 50  0000 C CNN
+F 1 "32.768" H 8580 3175 50  0000 C CNN
+F 2 "KiCad/Crystal.pretty:Crystal_SMD_2012-2Pin_2.0x1.2mm" H 8580 3325 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/0f59/0900766b80f59f41.pdf" H 8580 3325 50  0001 C CNN
+F 4 "Abracon LLC" H 8580 3325 60  0001 C CNN "MFN"
+F 5 "ABS06-127-32.768KHZ-T" H 8580 3325 50  0001 C CNN "MPN"
+F 6 "IOT 32.786KHZ XTAL" H 8580 3325 50  0001 C CNN "Description"
+F 7 "535-14513-1-ND" H 8580 3325 50  0001 C CNN "SKU"
+F 8 "Digikey" H 8580 3325 50  0001 C CNN "Vendor"
+	1    8580 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5F259FAA
+P 8230 3475
+F 0 "C12" H 8240 3545 50  0000 L CNN
+F 1 "15pF" H 8240 3395 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8230 3475 50  0001 C CNN
+F 3 "" H 8230 3475 50  0001 C CNN
+F 4 "6 V NPO" H 8230 3475 50  0001 C CNN "Characteristics"
+	1    8230 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5F259FB1
+P 8930 3475
+F 0 "C13" H 8940 3545 50  0000 L CNN
+F 1 "15pF" H 8940 3395 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8930 3475 50  0001 C CNN
+F 3 "" H 8930 3475 50  0001 C CNN
+F 4 "6 V NPO" H 8930 3475 50  0001 C CNN "Characteristics"
+	1    8930 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F0:STM32F042C6Ux U2
+U 1 1 5E7605FC
+P 10500 4155
+F 0 "U2" H 10820 5605 50  0000 C CNN
+F 1 "STM32F042C6Ux" H 11080 5525 50  0000 C CNN
+F 2 "KiCad/Package_DFN_QFN.pretty:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 10000 2755 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 10500 4155 50  0001 C CNN
+F 4 "IC MCU 32BIT 32KB FLASH 48UFQFPN" H 10500 4155 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" H 10500 4155 50  0001 C CNN "MFN"
+F 6 "STM32F042C6U6" H 10500 4155 50  0001 C CNN "MPN"
+F 7 "497-17342-ND" H 10500 4155 50  0001 C CNN "SKU"
+F 8 "Digikey" H 10500 4155 50  0001 C CNN "Vendor"
+F 9 "" H 10500 4155 50  0001 C CNN "Config"
+	1    10500 4155
+	1    0    0    -1  
+$EndComp
+$Comp
+L JBR_ICs:STUSB4500 U?
+U 1 1 5E63C0A4
+P 2855 8775
+AR Path="/5E5A3556/5E63C0A4" Ref="U?"  Part="1" 
+AR Path="/5E63C0A4" Ref="U1"  Part="1" 
+F 0 "U1" H 3155 8025 50  0000 C CNN
+F 1 "STUSB4500QTR" H 3155 8125 50  0000 C CNN
+F 2 "KiCad/Package_DFN_QFN.pretty:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 2855 7600 50  0001 C CNN
+F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwjMucG-xf7nAhVEhlwKHZwiBt0QFjABegQIBhAC&url=https%3A%2F%2Fwww.st.com%2Fresource%2Fen%2Fdatasheet%2Fstusb4500.pdf&usg=AOvVaw20vMqUU6zknpHuLJ7eGwwd" H 2855 8775 50  0001 C CNN
+F 4 "STMicroelectronics" H 2855 8775 50  0001 C CNN "MFN"
+F 5 "STUSB4500QTR" H 2855 8775 50  0001 C CNN "MPN"
+F 6 "497-18060-1-ND" H 2855 8775 50  0001 C CNN "SKU"
+F 7 "Digikey" H 2855 8775 50  0001 C CNN "Vendor"
+F 8 "IC USB CONTROLLER I2C 24QFN " H 2855 8775 50  0001 C CNN "Description"
+	1    2855 8775
+	1    0    0    -1  
+$EndComp
+$Comp
+L JBR_ICs:STL6P3LLH6 Q?
+U 1 1 5E63C0DF
+P 4655 7175
+AR Path="/5E5A3556/5E63C0DF" Ref="Q?"  Part="1" 
+AR Path="/5E63C0DF" Ref="Q1"  Part="1" 
+F 0 "Q1" V 4997 7175 50  0000 C CNN
+F 1 "STL6P3LLH6" V 4906 7175 50  0000 C CNN
+F 2 "tunaf1sh/misc.pretty:TRANS_STL6P3LLH6" H 4855 7275 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/3c/90/16/29/a8/76/48/02/DM00064617.pdf/files/DM00064617.pdf/jcr:content/translations/en.DM00064617.pdf" H 4655 7175 50  0001 C CNN
+F 4 "STMicroelectronics" H 4655 7175 50  0001 C CNN "MFN"
+F 5 "STL6P3LLH6" H 4655 7175 50  0001 C CNN "MPN"
+F 6 "Digikey" H 4655 7175 50  0001 C CNN "Vendor"
+F 7 "497-15315-1-ND" H 4655 7175 50  0001 C CNN "SKU"
+	1    4655 7175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E893208
+P 8450 4305
+F 0 "D2" H 8300 4405 50  0000 C CNN
+F 1 "STAT2" H 8550 4405 50  0000 C CNN
+F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 8450 4305 60  0001 C CNN
+F 3 "" H 8450 4305 60  0000 C CNN
+F 4 "Kingbright" H 8450 4305 50  0001 C CNN "MFN"
+F 5 "APT1608LSECK/J4-PRV" H 8450 4305 50  0001 C CNN "MPN"
+F 6 "Orange" H 8450 4305 50  0001 C CNN "Characteristics"
+F 7 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric)" H 8450 4305 50  0001 C CNN "Description"
+F 8 "754-1931-1-ND" H 8450 4305 50  0001 C CNN "SKU"
+F 9 "Digikey" H 8450 4305 50  0001 C CNN "Vendor"
+F 10 "" H 8450 4305 50  0001 C CNN "Config"
+	1    8450 4305
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E8931FD
+P 8450 4655
+AR Path="/5D93F36E/5E8931FD" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E8931FD" Ref="R?"  Part="1" 
+AR Path="/5E8931FD" Ref="R5"  Part="1" 
+F 0 "R5" H 8480 4675 50  0000 L CNN
+F 1 "1k" H 8480 4615 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 8450 4655 50  0001 C CNN
+F 3 "" H 8450 4655 50  0001 C CNN
+F 4 "5%" H 8450 4655 50  0001 C CNN "Characteristics"
+F 5 "" H 8450 4655 50  0001 C CNN "Config"
+	1    8450 4655
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E8931F6
+P 8750 4655
+AR Path="/5D93F36E/5E8931F6" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E8931F6" Ref="R?"  Part="1" 
+AR Path="/5E8931F6" Ref="R6"  Part="1" 
+F 0 "R6" H 8780 4675 50  0000 L CNN
+F 1 "1k" H 8780 4615 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 8750 4655 50  0001 C CNN
+F 3 "" H 8750 4655 50  0001 C CNN
+F 4 "5%" H 8750 4655 50  0001 C CNN "Characteristics"
+F 5 "" H 8750 4655 50  0001 C CNN "Config"
+	1    8750 4655
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5E8931F0
+P 8750 4305
+F 0 "D3" H 8600 4405 50  0000 C CNN
+F 1 "STAT1" H 8800 4405 50  0000 C CNN
+F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 8750 4305 60  0001 C CNN
+F 3 "" H 8750 4305 60  0000 C CNN
+F 4 "Kingbright" H 8750 4305 50  0001 C CNN "MFN"
+F 5 "APT1608LZGCK" H 8750 4305 50  0001 C CNN "MPN"
+F 6 "Green" H 8750 4305 50  0001 C CNN "Characteristics"
+F 7 "Green 525nm LED Indication - Discrete 2.65V 0603 (1608 Metric)" H 8750 4305 50  0001 C CNN "Description"
+F 8 "754-1934-1-ND" H 8750 4305 50  0001 C CNN "SKU"
+F 9 "Digikey" H 8750 4305 50  0001 C CNN "Vendor"
+F 10 "" H 8750 4305 50  0001 C CNN "Config"
+	1    8750 4305
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5E844AC1
+P 11500 4955
+AR Path="/5E844AC1" Ref="TP2"  Part="1" 
+AR Path="/5C65C880/5E844AC1" Ref="TP?"  Part="1" 
+AR Path="/5D93F36E/5E844AC1" Ref="TP?"  Part="1" 
+AR Path="/5D8BDE6F/5E844AC1" Ref="TP?"  Part="1" 
+F 0 "TP2" V 11500 5155 50  0000 L CNN
+F 1 "TestPoint" H 11558 4984 50  0001 L CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4955 50  0001 C CNN
+F 3 "~" H 11700 4955 50  0001 C CNN
+F 4 "nofit" H 11500 4955 50  0001 C CNN "Config"
+	1    11500 4955
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E844ABA
+P 11500 4855
+AR Path="/5E844ABA" Ref="TP1"  Part="1" 
+AR Path="/5C65C880/5E844ABA" Ref="TP?"  Part="1" 
+AR Path="/5D93F36E/5E844ABA" Ref="TP?"  Part="1" 
+AR Path="/5D8BDE6F/5E844ABA" Ref="TP?"  Part="1" 
+F 0 "TP1" V 11500 5055 50  0000 L CNN
+F 1 "TestPoint" H 11558 4884 50  0001 L CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 11700 4855 50  0001 C CNN
+F 3 "~" H 11700 4855 50  0001 C CNN
+F 4 "nofit" H 11500 4855 50  0001 C CNN "Config"
+	1    11500 4855
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5E775980
+P 8820 2325
+F 0 "C9" H 8820 2425 40  0000 L CNN
+F 1 "10uF" H 8826 2240 40  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8858 2175 30  0001 C CNN
+F 3 "" H 8820 2325 60  0000 C CNN
+F 4 "X5R 25V" H 8820 2325 50  0001 C CNN "Characteristics"
+	1    8820 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5E775972
+P 8620 2325
+F 0 "C8" H 8620 2425 40  0000 L CNN
+F 1 "1uF" H 8626 2240 40  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8658 2175 30  0001 C CNN
+F 3 "" H 8620 2325 60  0000 C CNN
+F 4 "X5R 25V" H 8620 2325 50  0001 C CNN "Characteristics"
+	1    8620 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5E77596B
+P 8420 2325
+F 0 "C7" H 8420 2425 40  0000 L CNN
+F 1 "1uF" H 8426 2240 40  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8458 2175 30  0001 C CNN
+F 3 "" H 8420 2325 60  0000 C CNN
+F 4 "X5R 25V" H 8420 2325 50  0001 C CNN "Characteristics"
+	1    8420 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5E77594D
+P 9010 2325
+F 0 "C10" H 9010 2425 40  0000 L CNN
+F 1 "4.7uF" H 9016 2240 40  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 9048 2175 30  0001 C CNN
+F 3 "" H 9010 2325 60  0000 C CNN
+F 4 "X5R 6V" H 9010 2325 50  0001 C CNN "Characteristics"
+	1    9010 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_CAN_LIN:SN65HVD230 U?
+U 1 1 5E6703D4
+P 10465 8025
+AR Path="/5E66BB0D/5E6703D4" Ref="U?"  Part="1" 
+AR Path="/5E6703D4" Ref="U3"  Part="1" 
+F 0 "U3" H 10345 8375 50  0000 C CNN
+F 1 "SN65HVD230" H 10155 8295 50  0000 C CNN
+F 2 "KiCad/Package_SO.pretty:SOIC-8_3.9x4.9mm_P1.27mm" H 10465 7525 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 10365 8425 50  0001 C CNN
+F 4 "IC TRANSCEIVER HALF 1/1 8SOIC" H 10465 8025 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 10465 8025 50  0001 C CNN "MFN"
+F 6 "SN65HVD230DR" H 10465 8025 50  0001 C CNN "MPN"
+F 7 "MCP2551 drop in replacement" H 10465 8025 50  0001 C CNN "Notes"
+F 8 "296-11654-1-ND" H 10465 8025 50  0001 C CNN "SKU"
+F 9 "Digikey" H 10465 8025 50  0001 C CNN "Vendor"
+F 10 "" H 10465 8025 50  0001 C CNN "Config"
+	1    10465 8025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E7E422D
+P 4425 8805
+AR Path="/5D93F36E/5E7E422D" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E7E422D" Ref="R?"  Part="1" 
+AR Path="/5E7E422D" Ref="R17"  Part="1" 
+AR Path="/5E2107B4/5E7E422D" Ref="R?"  Part="1" 
+AR Path="/5E5A3556/5E7E422D" Ref="R?"  Part="1" 
+F 0 "R17" H 4295 8835 50  0000 L CNN
+F 1 "4k7" H 4245 8765 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4425 8805 50  0001 C CNN
+F 3 "" H 4425 8805 50  0001 C CNN
+F 4 "1%" H 4425 8805 50  0001 C CNN "Characteristics"
+F 5 "" H 4425 8805 50  0001 C CNN "Config"
+	1    4425 8805
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E7E4BAB
+P 4585 8805
+AR Path="/5D93F36E/5E7E4BAB" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E7E4BAB" Ref="R?"  Part="1" 
+AR Path="/5E7E4BAB" Ref="R18"  Part="1" 
+AR Path="/5E2107B4/5E7E4BAB" Ref="R?"  Part="1" 
+AR Path="/5E5A3556/5E7E4BAB" Ref="R?"  Part="1" 
+F 0 "R18" H 4615 8825 50  0000 L CNN
+F 1 "4k7" H 4615 8765 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4585 8805 50  0001 C CNN
+F 3 "" H 4585 8805 50  0001 C CNN
+F 4 "1%" H 4585 8805 50  0001 C CNN "Characteristics"
+F 5 "" H 4585 8805 50  0001 C CNN "Config"
+	1    4585 8805
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E63C110
+P 2255 6975
+AR Path="/5E5A3556/5E63C110" Ref="C?"  Part="1" 
+AR Path="/5E63C110" Ref="C1"  Part="1" 
+F 0 "C1" V 2305 7050 50  0000 L CNN
+F 1 "1uF" V 2305 6575 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 2293 6825 50  0001 C CNN
+F 3 "~" H 2255 6975 50  0001 C CNN
+F 4 "X5R 25V" H 2255 6975 50  0001 C CNN "Characteristics"
+F 5 "" H 2255 6975 50  0001 C CNN "Config"
+	1    2255 6975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E63C10A
+P 2255 7175
+AR Path="/5E5A3556/5E63C10A" Ref="C?"  Part="1" 
+AR Path="/5E63C10A" Ref="C2"  Part="1" 
+F 0 "C2" V 2305 7250 50  0000 L CNN
+F 1 "1uF" V 2305 6775 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 2293 7025 50  0001 C CNN
+F 3 "~" H 2255 7175 50  0001 C CNN
+F 4 "X5R 25V" H 2255 7175 50  0001 C CNN "Characteristics"
+F 5 "" H 2255 7175 50  0001 C CNN "Config"
+	1    2255 7175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E63C0FA
+P 5555 7275
+AR Path="/5D93F36E/5E63C0FA" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E63C0FA" Ref="R?"  Part="1" 
+AR Path="/5E63C0FA" Ref="R10"  Part="1" 
+AR Path="/5E2107B4/5E63C0FA" Ref="R?"  Part="1" 
+AR Path="/5E5A3556/5E63C0FA" Ref="R?"  Part="1" 
+F 0 "R10" H 5585 7295 50  0000 L CNN
+F 1 "1k" H 5585 7235 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 5555 7275 50  0001 C CNN
+F 3 "" H 5555 7275 50  0001 C CNN
+F 4 "5%" H 5555 7275 50  0001 C CNN "Characteristics"
+F 5 "" H 5555 7275 50  0001 C CNN "Config"
+	1    5555 7275
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E63C0F0
+P 4355 7675
+AR Path="/5D93F36E/5E63C0F0" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E63C0F0" Ref="R?"  Part="1" 
+AR Path="/5E63C0F0" Ref="R4"  Part="1" 
+AR Path="/5E2107B4/5E63C0F0" Ref="R?"  Part="1" 
+AR Path="/5E5A3556/5E63C0F0" Ref="R?"  Part="1" 
+F 0 "R4" H 4385 7695 50  0000 L CNN
+F 1 "22k" H 4385 7635 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4355 7675 50  0001 C CNN
+F 3 "" H 4355 7675 50  0001 C CNN
+F 4 "5%" H 4355 7675 50  0001 C CNN "Characteristics"
+F 5 "" H 4355 7675 50  0001 C CNN "Config"
+	1    4355 7675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E63C0E8
+P 5105 7275
+AR Path="/5E5A3556/5E63C0E8" Ref="C?"  Part="1" 
+AR Path="/5E63C0E8" Ref="C5"  Part="1" 
+F 0 "C5" H 5220 7321 50  0000 L CNN
+F 1 "100n" H 5220 7230 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 5143 7125 50  0001 C CNN
+F 3 "~" H 5105 7275 50  0001 C CNN
+F 4 "" H 5105 7275 50  0001 C CNN "Description"
+F 5 "X5R 25V" H 5105 7275 50  0001 C CNN "Characteristics"
+F 6 "" H 5105 7275 50  0001 C CNN "Config"
+	1    5105 7275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E63C0D7
+P 4905 7475
+AR Path="/5D93F36E/5E63C0D7" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E63C0D7" Ref="R?"  Part="1" 
+AR Path="/5E63C0D7" Ref="R9"  Part="1" 
+AR Path="/5E2107B4/5E63C0D7" Ref="R?"  Part="1" 
+AR Path="/5E5A3556/5E63C0D7" Ref="R?"  Part="1" 
+F 0 "R9" V 5105 7425 50  0000 L CNN
+F 1 "100R" V 5005 7425 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4905 7475 50  0001 C CNN
+F 3 "" H 4905 7475 50  0001 C CNN
+F 4 "1%" H 4905 7475 50  0001 C CNN "Characteristics"
+F 5 "" H 4905 7475 50  0001 C CNN "Config"
+	1    4905 7475
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E63C0CC
+P 4355 7275
+AR Path="/5D93F36E/5E63C0CC" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E63C0CC" Ref="R?"  Part="1" 
+AR Path="/5E63C0CC" Ref="R3"  Part="1" 
+AR Path="/5E2107B4/5E63C0CC" Ref="R?"  Part="1" 
+AR Path="/5E5A3556/5E63C0CC" Ref="R?"  Part="1" 
+F 0 "R3" H 4385 7295 50  0000 L CNN
+F 1 "100k" H 4385 7235 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4355 7275 50  0001 C CNN
+F 3 "" H 4355 7275 50  0001 C CNN
+F 4 "5%" H 4355 7275 50  0001 C CNN "Characteristics"
+F 5 "" H 4355 7275 50  0001 C CNN "Config"
+	1    4355 7275
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E63C08E
+P 1905 8275
+AR Path="/5E5A3556/5E63C08E" Ref="R?"  Part="1" 
+AR Path="/5E63C08E" Ref="R1"  Part="1" 
+F 0 "R1" H 1974 8321 50  0000 L CNN
+F 1 "2k37" H 1974 8230 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" V 1835 8275 50  0001 C CNN
+F 3 "~" H 1905 8275 50  0001 C CNN
+F 4 "1%" H 1905 8275 50  0001 C CNN "Characteristics"
+F 5 "" H 1905 8275 50  0001 C CNN "Config"
+	1    1905 8275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E63C073
+P 3805 9425
+AR Path="/5E5A3556/5E63C073" Ref="R?"  Part="1" 
+AR Path="/5E63C073" Ref="R2"  Part="1" 
+F 0 "R2" H 3874 9471 50  0000 L CNN
+F 1 "2k37" H 3874 9380 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" V 3735 9425 50  0001 C CNN
+F 3 "~" H 3805 9425 50  0001 C CNN
+F 4 "1%" H 3805 9425 50  0001 C CNN "Characteristics"
+F 5 "" H 3805 9425 50  0001 C CNN "Config"
+	1    3805 9425
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E63C069
+P 2255 7375
+AR Path="/5E5A3556/5E63C069" Ref="C?"  Part="1" 
+AR Path="/5E63C069" Ref="C3"  Part="1" 
+F 0 "C3" V 2205 7200 50  0000 L CNN
+F 1 "1uF" V 2205 7450 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 2293 7225 50  0001 C CNN
+F 3 "~" H 2255 7375 50  0001 C CNN
+F 4 "X5R 25V" H 2255 7375 50  0001 C CNN "Characteristics"
+F 5 "" H 2255 7375 50  0001 C CNN "Config"
+	1    2255 7375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5E5B2C71
+P 5865 2285
+AR Path="/5E5A3556/5E5B2C71" Ref="D?"  Part="1" 
+AR Path="/5E5B2C71" Ref="D6"  Part="1" 
+F 0 "D6" V 5819 2364 50  0000 L CNN
+F 1 "D22V0S1U2WS-7" V 5910 2364 50  0000 L CNN
+F 2 "KiCad/Diode_SMD.pretty:D_SOD-323" H 5865 2285 50  0001 C CNN
+F 3 "~" H 5865 2285 50  0001 C CNN
+F 4 "37V Clamp 30A (8/20µs) Ipp Tvs Diode Surface Mount SOD-323" H 5865 2285 50  0001 C CNN "Description"
+F 5 "Diodes Incorporated" H 5865 2285 50  0001 C CNN "MFN"
+F 6 "D22V0S1U2WS-7" H 5865 2285 50  0001 C CNN "MPN"
+F 7 "D22V0S1U2WS-7DICT-ND" H 5865 2285 50  0001 C CNN "SKU"
+F 8 "Digikey" H 5865 2285 50  0001 C CNN "Vendor"
+F 9 "22 V clamp" H 5865 2285 50  0001 C CNN "Characteristics"
+F 10 "" H 5865 2285 50  0001 C CNN "Config"
+	1    5865 2285
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E5B2C4A
+P 4955 4680
+AR Path="/5E5B2C4A" Ref="D1"  Part="1" 
+AR Path="/5E062BFC/5E5B2C4A" Ref="D?"  Part="1" 
+AR Path="/5E2107B4/5E062BFC/5E5B2C4A" Ref="D?"  Part="1" 
+AR Path="/5E5A3556/5E5B2C4A" Ref="D?"  Part="1" 
+F 0 "D1" H 4805 4780 50  0000 C CNN
+F 1 "PWK" H 5005 4780 50  0000 C CNN
+F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 4955 4680 60  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LZGCK.pdf" H 4955 4680 60  0001 C CNN
+F 4 "Kingbright" H 4955 4680 50  0001 C CNN "MFN"
+F 5 "APT1608LZGCK" H 4955 4680 50  0001 C CNN "MPN"
+F 6 "Green" H 4955 4680 50  0001 C CNN "Characteristics"
+F 7 "" H 4955 4680 50  0001 C CNN "Config"
+F 8 "Green 525nm LED Indication - Discrete 2.65V 0603 (1608 Metric)" H 4955 4680 50  0001 C CNN "Description"
+F 9 "754-1934-1-ND" H 4955 4680 50  0001 C CNN "SKU"
+F 10 "Digikey" H 4955 4680 50  0001 C CNN "Vendor"
+	1    4955 4680
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E5B2C3D
+P 4955 4980
+AR Path="/5D93F36E/5E5B2C3D" Ref="R?"  Part="1" 
+AR Path="/5D8BDE6F/5E5B2C3D" Ref="R?"  Part="1" 
+AR Path="/5E5B2C3D" Ref="R11"  Part="1" 
+AR Path="/5E062BFC/5E5B2C3D" Ref="R?"  Part="1" 
+AR Path="/5E2107B4/5E062BFC/5E5B2C3D" Ref="R?"  Part="1" 
+AR Path="/5E5A3556/5E5B2C3D" Ref="R?"  Part="1" 
+F 0 "R11" H 4985 5000 50  0000 L CNN
+F 1 "1k" H 4985 4940 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0402_1005Metric" H 4955 4980 50  0001 C CNN
+F 3 "" H 4955 4980 50  0001 C CNN
+F 4 "" H 4955 4980 50  0001 C CNN "Config"
+F 5 "5%" H 4955 4980 50  0001 C CNN "Characteristics"
+	1    4955 4980
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E5B2C2F
+P 4305 4830
+AR Path="/5E5A3556/5E5B2C2F" Ref="C?"  Part="1" 
+AR Path="/5E5B2C2F" Ref="C6"  Part="1" 
+F 0 "C6" H 4420 4876 50  0000 L CNN
+F 1 "1uF" H 4420 4785 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 4343 4680 50  0001 C CNN
+F 3 "~" H 4305 4830 50  0001 C CNN
+F 4 "X5R 25V" H 4305 4830 50  0001 C CNN "Characteristics"
+F 5 "" H 4305 4830 50  0001 C CNN "Config"
+	1    4305 4830
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E5B2C28
+P 3205 4830
+AR Path="/5E5A3556/5E5B2C28" Ref="C?"  Part="1" 
+AR Path="/5E5B2C28" Ref="C4"  Part="1" 
+F 0 "C4" H 3320 4876 50  0000 L CNN
+F 1 "1uF" H 3320 4785 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 3243 4680 50  0001 C CNN
+F 3 "~" H 3205 4830 50  0001 C CNN
+F 4 "X5R 25V" H 3205 4830 50  0001 C CNN "Characteristics"
+F 5 "" H 3205 4830 50  0001 C CNN "Config"
+	1    3205 4830
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1703A-3302_SOT23 U?
+U 1 1 5E5B2C21
+P 3755 4480
+AR Path="/5DFF34AF/5E5B2C21" Ref="U?"  Part="1" 
+AR Path="/5E5B2C21" Ref="U5"  Part="1" 
+AR Path="/5E5A3556/5E5B2C21" Ref="U?"  Part="1" 
+F 0 "U5" H 3605 4605 50  0000 C CNN
+F 1 "MCP1703A-3302_SOT23" H 3755 4605 50  0000 L CNN
+F 2 "KiCad/Package_TO_SOT_SMD.pretty:SOT-23" H 3755 4680 50  0001 C CNN
+F 3 "" H 3755 4430 50  0001 C CNN
+F 4 "Microchip" H 3755 4480 60  0001 C CNN "MFN"
+F 5 "MCP1703T-3302E/CB" H 3755 4480 60  0001 C CNN "MPN"
+F 6 "IC REG LIN 3.3V 250MA SOT23A-3" H 3755 4480 60  0001 C CNN "Description"
+F 7 "MCP1703T-3302E/CBCT-ND" H 3755 4480 50  0001 C CNN "SKU"
+F 8 "Digikey" H 3755 4480 50  0001 C CNN "Vendor"
+F 9 "" H 3755 4480 50  0001 C CNN "Config"
+	1    3755 4480
+	1    0    0    -1  
+$EndComp
+$Comp
+L canape-rescue:USB_C_Receptacle_USB2.0-Connector J?
+U 1 1 5E5B2BFA
+P 2230 2410
+AR Path="/5E1D22D5/5E5B2BFA" Ref="J?"  Part="1" 
+AR Path="/5E5B2BFA" Ref="J1"  Part="1" 
+AR Path="/5E5A3556/5E5B2BFA" Ref="J?"  Part="1" 
+F 0 "J1" H 2337 3277 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 2337 3186 50  0000 C CNN
+F 2 "KiCad/Connector_USB.pretty:USB_C_Receptacle_Amphenol_12401610E4-2A" H 2380 2410 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/12401832E402A_Dwg_RevX1_04-25-17.pdf" H 2380 2410 50  0001 C CNN
+F 4 "Amphenol ICC (Commercial Products)" H 2230 2410 50  0001 C CNN "MFN"
+F 5 "12401832E402A" H 2230 2410 50  0001 C CNN "MPN"
+F 6 "Digikey" H 2230 2410 50  0001 C CNN "Vendor"
+F 7 "12401832E402ACT-ND" H 2230 2410 50  0001 C CNN "SKU"
+F 8 "" H 2230 2410 50  0001 C CNN "Config"
+	1    2230 2410
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:USBLC6-2SC6 U?
+U 1 1 5E5B2BE4
+P 4720 2270
+AR Path="/5E1D22D5/5E5B2BE4" Ref="U?"  Part="1" 
+AR Path="/5E5B2BE4" Ref="U4"  Part="1" 
+AR Path="/5E5A3556/5E5B2BE4" Ref="U?"  Part="1" 
+F 0 "U4" H 4470 2670 50  0000 C CNN
+F 1 "USBLC6-4SC6" H 5120 2670 50  0000 C CNN
+F 2 "KiCad/Package_TO_SOT_SMD.pretty:SOT-23-6" H 3970 2670 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 4920 2620 50  0001 C CNN
+F 4 "TVS DIODE 5.25V 17V SOT23-6" H 4720 2270 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" H 4720 2270 50  0001 C CNN "MFN"
+F 6 "USBLC6-4SC6" H 4720 2270 50  0001 C CNN "MPN"
+F 7 "497-4492-1-ND" H 4720 2270 50  0001 C CNN "SKU"
+F 8 "Digikey" H 4720 2270 50  0001 C CNN "Vendor"
+	1    4720 2270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5DA8F3AC
+P 9645 7925
+AR Path="/5DA8F3AC" Ref="TP5"  Part="1" 
+AR Path="/5C65C880/5DA8F3AC" Ref="TP?"  Part="1" 
+AR Path="/5D93F36E/5DA8F3AC" Ref="TP?"  Part="1" 
+AR Path="/5D8BDE6F/5DA8F3AC" Ref="TP4"  Part="1" 
+F 0 "TP5" V 9645 8125 50  0000 L CNN
+F 1 "TestPoint" H 9703 7954 50  0001 L CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 9845 7925 50  0001 C CNN
+F 3 "~" H 9845 7925 50  0001 C CNN
+F 4 "nofit" H 9645 7925 50  0001 C CNN "Config"
+	1    9645 7925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5DA8EEF9
+P 9645 8025
+AR Path="/5DA8EEF9" Ref="TP6"  Part="1" 
+AR Path="/5C65C880/5DA8EEF9" Ref="TP?"  Part="1" 
+AR Path="/5D93F36E/5DA8EEF9" Ref="TP?"  Part="1" 
+AR Path="/5D8BDE6F/5DA8EEF9" Ref="TP3"  Part="1" 
+F 0 "TP6" V 9645 8225 50  0000 L CNN
+F 1 "TestPoint" H 9703 8054 50  0001 L CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D1.0mm" H 9845 8025 50  0001 C CNN
+F 3 "~" H 9845 8025 50  0001 C CNN
+F 4 "nofit" H 9645 8025 50  0001 C CNN "Config"
+	1    9645 8025
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 54724A1C
+P 10715 7625
+F 0 "C15" V 10765 7425 40  0000 L CNN
+F 1 "100n" V 10815 7425 40  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 10753 7475 30  0001 C CNN
+F 3 "" H 10715 7625 60  0000 C CNN
+F 4 "X5R 25V" H 10715 7625 50  0001 C CNN "Characteristics"
+F 5 "" H 10715 7625 50  0001 C CNN "Config"
+	1    10715 7625
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

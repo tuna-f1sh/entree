@@ -13,7 +13,7 @@ templates: # defining templates to be used later on
     colors: [BK, RD, BU, YE]
 
 connectors:
-  canape:
+  canape-molex:
     <<: *molex_pico_f
     pinlabels: [GND, CAN-, CAN+, VBUS]
     notes: VBUS can be forced or only enabled with valid USB-PD profile. Please see usage information.
@@ -41,7 +41,7 @@ cables:
 
 connections:
   -
-    - canape: [1,2,3,4]
+    - canape-molex: [1,2,3,4]
     - W1: [1,2,3,4]
     - header
   -

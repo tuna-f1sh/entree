@@ -1,0 +1,35 @@
+templates: # defining templates to be used later on
+  - &molex_pico_m
+    type: Molex Picoblade 51021-0400
+    subtype: male
+  - &molex_pico_f
+    type: Molex Picoblade 53261-0471
+    subtype: male
+  - &bmp_wire
+    gauge: 0.25 mm2
+    colors: [RD, GN, VT, BK]
+
+connectors:
+  canape:
+    type: Molex Picoblade 051021-0400
+    subtype: male
+    pinlabels: [GND, CAN-, CAN+, VBUS]
+    notes: VBUS can be forced or only enabled with valid USB-PD profile. Please see usage information.
+  header:
+    style: simple
+    autogenerate: true
+    type: Pin header
+    subtype: male 2.54 mm²
+
+cables:
+  W1:
+    <<: *bmp_wire
+    type: Black Magic 0.1in Pin Header Serial Cable
+    show_equiv: true # auto-calculate AWG equivalent
+    length: 0.25
+
+connections:
+  -
+    - canape: [1,2,3,4]
+    - W1: [1,2,3,4]
+    - header

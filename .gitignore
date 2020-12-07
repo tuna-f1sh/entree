@@ -1,0 +1,29 @@
+exports/
+ref/
+
+# Output folders
+prod/
+Gerber/
+Gerbers/
+exports/
+build*
+shapes3d/
+dist/
+*.egg-info
+media/
+*.xml
+
+# Temp
+_saved_*
+tags
+.tags
+*~
+*.swp
+*DS_Store
+*.pdsbak
+*.workspace
+*.zip
+*CADCAM
+*-bak
+*.bak
+_autosave*

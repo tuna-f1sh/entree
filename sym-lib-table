@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name canape-rescue)(type Legacy)(uri ${KIPRJMOD}/canape-rescue.lib)(options "")(descr ""))
+)

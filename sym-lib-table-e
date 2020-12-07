@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name usb-ccan-rescue)(type Legacy)(uri ${KIPRJMOD}/usb-ccan-rescue.lib)(options "")(descr ""))
+)

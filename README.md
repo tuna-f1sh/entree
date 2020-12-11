@@ -1,4 +1,4 @@
-![Canape logo](./img/Canapé_Silk.png)
+![Canape logo](./img/canape_logo.png)
 
 # Canapé USB-C CAN Interface
 

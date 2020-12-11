@@ -22,6 +22,10 @@ The Canapé is a USB-C CAN interface. It is a variant of the open source [candle
 * Small form factor: 55 x 18.5 mm.
 * Silkscreen art 🎨!
 
+# Purchase
+
+An initial production assembly should be ready by the end of Janurary. I will sell them on Tindie and the [JBR Engineering shop](https://shop.jbrengineering.co.uk).
+
 # Usage
 
 ## Hardware Connection
@@ -45,19 +49,93 @@ Below is a wiring example showing the Canapé Picoblade and JST pinout. A Black 
 
 ## Software
 
-TODO
+A [Vagrant](https://www.vagrantup.com/) virtual machine environment is provided in the ./linux-vm folder for those on non-Linux hosts or who want a pre-configured environment. Install Vagrant and VirtualBox and then setup the machine from within the ./linux-vm folder with the `vagrant up` command.
+
+### Linux SocketCAN
+
+Canapé comes with _candleLight_ firmware which is intended for use with a Linux host. Most Linux distributions include the gs_usb driver and can kernel modules by default so getting started is very easy.
+
+#### Create CAN network interface [[ref]](https://elinux.org/Bringing_CAN_interface_up)
+
+```
+sudo ip link set can0 type can bitrate BIT_RATE # where BIT_RATE is the CAN bus speed in b/s
+sudo ip link set up can0
+```
+
+#### CLI
+
+Install `can-utils` using one's package manager and then various command line tools are available.
+
+```
+cansend can0 999#DEADBEEF   # Send a frame to 0x999 with payload 0xdeadbeef
+candump can0                # Show all traffic received by can0
+canbusload can0 500000      # Calculate bus loading percentage on can0
+cansniffer can0             # Display top-style view of can traffic
+cangen can0 -D 11223344DEADBEEF -L 8    # Generate fixed-data CAN messages
+```
+
+See the [can-utils README](https://github.com/linux-can/can-utils/blob/master/README.md) for more.
+
+#### Cangaroo GUI
+
+The Cangaroo GUI can be compiled for Linux hosts. See [Cangaroo](https://github.com/normaldotcom/cangaroo/).
+
+### Windows
+
+To use the default _candleLight_ firmware on Windows, one can use [Cangaroo](https://github.com/normaldotcom/cangaroo/): [Pre-compiled Win32 binary](https://www.dropbox.com/s/dyh9gvt572v8nhn/cangaroo-win32-0363ce7.zip?dl=0).
+
+The _PCAN_cantact_ firmware can be used with the [PCAN software suit](https://www.peak-system.com/Software.68.0.html?&L=1) and [Python](#python) modules.
+
+Alternatively, to use [SocketCAN](#linux-socketcan) one can use the pre-configured virtual machine explained at the start of the [Software section](#software).
+
+### Python
+
+The [python-can](https://python-can.readthedocs.io/en/master/#) module supports _SocketCAN_ (candleLight), _slcan_ and _PCAN_ devices so options for all hosts are covered - see the [configuration page](https://python-can.readthedocs.io/en/master/configuration.html).
+
+Paired with the [cantools](https://pypi.org/project/cantools/) module, one has access to powerful CLI tools and scripting for CAN bus operations including use with database definition files.
+
+Both modules are pre-installed in the Vagrant virtual machine.
 
 ## DIP Switches
 
-TODO
+The 4 bit DIP switch sets unique runtime settings when in the 'ON' position; for normal usage as a CAN bus probe these would be 'OFF'.
+
+| Switch | Decimal | Set Action                                                    |
+|--------|---------|---------------------------------------------------------------|
+| 1      | 1       | Force bootloader for DFU.                                     |
+| 2      | 2       | Enable Canapé internal configuration CAN IDs.                 |
+| 3      | 4       | Enable VBUS -> VBS always not just when USB-PD profile valid. |
+| 4      | 8       | Enable 120 ohm CAN_H/CAN_L termination resistor               |
 
 ## USB Power Delivery (USB-PD)
 
-TODO
+__TODO setup commands__
 
 ## Firmware
 
-TODO
+* [**candleLight_fw**](https://github.com/tuna-f1sh/candleLight_fw) - [[BIN DOWNLOAD]](./bin/canape_fw.bin): Default firmware shipping with Canapé. Works with [Linux SocketCAN](#linux-socketcan) and the [Cangaroo](#cangaroo-gui) GUI. Includes support for configuration of the on-board STUSB4500 USB-C controller and DFU without setting DIP switch.
+* [**PCAN CANtact**](https://github.com/tuna-f1sh/pcan_cantact/tree/hsi48) - [[BIN DOWNLOAD]](./bin/pcan_canape_hw.bin): Open source PCAN compatible firmware; works like a PCAN USB adaptor with the PCAN software suite and python-can module. Does not include USB-PD configuration or DFU.
+* [**cantact_slcan**](https://github.com/normaldotcom/cantact-fw): slcand is a USART CAN daemon for Linux, which emulates a CAN network socket over USART. The pre-cursor of the candleLight_fw and gs_usb driver, it offers no real advantage since it is still over USB as a CDC. I've found it to drop frames at common bus rates and so do not recommend it. USART pins are exposed however if one wishes to play with slcan over physical USART. A virtual network interface can be created: `sudo slcand -o -s8 -t hw -S 3000000 /dev/ttyS0` and then used like a [SocketCAN](#linux-socketcan) interface.
+
+### Update
+
+Enable the DFU [DIP switch](#dip-switches) and then issue the following command with [`dfu-util`](http://dfu-util.sourceforge.net/):
+
+```
+sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D $FIRMWARE_FILE.bin
+```
+
+Where `$FIRMWARE_FILE.bin` is the firmware file to be updated. Binaires are stored in the './bin' folder of this repository, so to flash:
+
+```
+sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ./bin/canape_fw.bin # candleLight_fw
+sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ./bin/pcan_canape_hw.bin # pcan_cantact
+```
+
+There is also a [Web DFU tool](https://devanlai.github.io/webdfu/dfu-util/), which does not require `dfu-util`. The only requirement is the Chrome browser. Use these settings:
+
+* Vendor ID: **0x0483**
+* Transfer Size: **2048**
 
 # Credits
 

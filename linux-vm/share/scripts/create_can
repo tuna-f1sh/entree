@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: create_can LINK BIT_RATE"
+    exit 2
+fi
+
+link=$1
+bitrate=$2
+
+if [[ "$link" == vcan* ]]; then
+  sudo ip link add dev vcan0 type vcan
+  sudo ip link set up vcan0
+else
+  if $(sudo ip link show dev $link | grep -q 'DOWN'); then
+    echo Creating "$link" link @ $bitrate b/s
+    sudo ip link set $link type can bitrate $bitrate restart-ms 100
+    sudo ip link set down $link
+    sudo ip link set up $link
+  elif $(sudo ip link show dev $link | grep -q 'UP'); then
+    echo $link link already up
+  else
+    echo Restarting CAN link $link
+    # anything else bring it up and down
+    sudo ip link set down $link
+    sudo ip link set up $link
+  fi
+fi

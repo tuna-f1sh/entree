@@ -1501,7 +1501,7 @@ F 0 "C12" H 8240 3545 50  0000 L CNN
 F 1 "15pF" H 8240 3395 50  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8230 3475 50  0001 C CNN
 F 3 "" H 8230 3475 50  0001 C CNN
-F 4 "6 V NPO" H 8230 3475 50  0001 C CNN "Characteristics"
+F 4 "NPO 6V" H 8230 3475 50  0001 C CNN "Characteristics"
 	1    8230 3475
 	1    0    0    -1  
 $EndComp
@@ -1513,7 +1513,7 @@ F 0 "C13" H 8940 3545 50  0000 L CNN
 F 1 "15pF" H 8940 3395 50  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8930 3475 50  0001 C CNN
 F 3 "" H 8930 3475 50  0001 C CNN
-F 4 "6 V NPO" H 8930 3475 50  0001 C CNN "Characteristics"
+F 4 "NPO 6V" H 8930 3475 50  0001 C CNN "Characteristics"
 	1    8930 3475
 	1    0    0    -1  
 $EndComp
@@ -1677,7 +1677,7 @@ F 0 "C9" H 8820 2425 40  0000 L CNN
 F 1 "10uF" H 8826 2240 40  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8858 2175 30  0001 C CNN
 F 3 "" H 8820 2325 60  0000 C CNN
-F 4 "X5R 25V" H 8820 2325 50  0001 C CNN "Characteristics"
+F 4 "X5R 6V" H 8820 2325 50  0001 C CNN "Characteristics"
 	1    8820 2325
 	1    0    0    -1  
 $EndComp

@@ -1,0 +1,45 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+$msg = <<MSG
+------------------------------------------------------
+Canapé Debian CAN party started! 
+
+Login to box with 'vagrant ssh', then use interface 'can0':
+
+CANUTILS:
+ - create_can can0 BIT_RATE # create link with BIT_RATE in b/s
+ - candump can0 -v # dump CAN traffic
+ - cansend can0 --help. # see how to send CAN messages
+ - canplayer --help # replay CAN files captured with candump -L
+
+ See https://github.com/linux-can/can-utils/blob/master/README.md for more
+
+PYTHON CANTOOLS:
+  - CLI tools available. Refer to https://pypi.org/project/cantools/
+  - Share database files with virtual machine by placing them in ./share. They are available at /host/
+
+------------------------------------------------------
+MSG
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "debian/buster64"
+
+  config.vm.synced_folder "./share", "/host"
+
+  config.vm.provider "virtualbox" do |vb|
+    # vb.memory = "1024"
+    vb.name = "Canapé VM"
+    vb.customize ["modifyvm", :id, "--usb", "on"]
+    vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'Canape gs_usb', '--vendorid', '0x1d50', '--productid', '0x606f']
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get install -y can-utils libsocketcan2 libsocketcan-dev python3-pip dfu-util
+    pip3 install cantools
+    cp /host/scripts/create_can /usr/local/bin
+  SHELL
+
+  config.vm.post_up_message = $msg
+end

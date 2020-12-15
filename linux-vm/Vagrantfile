@@ -3,7 +3,7 @@
 
 $msg = <<MSG
 ------------------------------------------------------
-Canapé Debian CAN party started! 
+Entreé Debian CAN party started! 
 
 Login to box with 'vagrant ssh', then use interface 'can0':
 
@@ -29,9 +29,9 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
     # vb.memory = "1024"
-    vb.name = "Canapé VM"
+    vb.name = "Entreé VM"
     vb.customize ["modifyvm", :id, "--usb", "on"]
-    vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'Canape gs_usb', '--vendorid', '0x1d50', '--productid', '0x606f']
+    vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'Entree gs_usb', '--vendorid', '0x1d50', '--productid', '0x606f']
   end
 
   config.vm.provision "shell", inline: <<-SHELL

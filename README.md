@@ -1,10 +1,10 @@
-![Canape logo](./img/canape_logo.png)
+![Entreé logo](./img/entree_logo.png)
 
-# Canapé USB-C CAN Interface
+# Entreé USB-C CAN Interface
 
-Canapé - gets CAN the party started!
+Entreé - like a Canapé but tastier...yes the logo is, and name was, Canapé but I didn't want to face a Trademark dispute over an acute e for a hobby project...
 
-The Canapé is a USB-C CAN interface. It is a variant of the open source [candleLight](https://github.com/HubertD/candleLight) platform and its many spawns. Not only does it add USB-C, it brings new features and CAN/USB controlled USB-PD for powering devices under test.
+The Entreé is a USB-C CAN interface. It is a variant of the open source [candleLight](https://github.com/HubertD/candleLight) platform and its many spawns. Not only does it add USB-C, it brings new features and CAN/USB controlled USB-PD for powering devices under test.
 
 ## Features
 
@@ -43,9 +43,9 @@ A secondary unfitted [_JST SM04B_](https://www.digikey.ch/products/en?keywords=4
 
 ### Wiring Example
 
-Below is a wiring example showing the Canapé Picoblade and JST pinout. A Black Magic 0.1" female header cable is connected to the Picoblade and standard STEMMA QT connected to the secondary JST header. **Note both cable colouring is non-standard due to optimal board layout**.
+Below is a wiring example showing the Entreé Picoblade and JST pinout. A Black Magic 0.1" female header cable is connected to the Picoblade and standard STEMMA QT connected to the secondary JST header. **Note both cable colouring is non-standard due to optimal board layout**.
 
-![Canape wiring diagram](./img/canape.png)
+![Entreé wiring diagram](./img/entree.png)
 
 ## Software
 
@@ -53,7 +53,7 @@ A [Vagrant](https://www.vagrantup.com/) virtual machine environment is provided 
 
 ### Linux SocketCAN
 
-Canapé comes with _candleLight_ firmware which is intended for use with a Linux host. Most Linux distributions include the gs_usb driver and can kernel modules by default so getting started is very easy.
+Entreé comes with _candleLight_ firmware which is intended for use with a Linux host. Most Linux distributions include the gs_usb driver and can kernel modules by default so getting started is very easy.
 
 #### Create CAN network interface [[ref]](https://elinux.org/Bringing_CAN_interface_up)
 
@@ -103,7 +103,7 @@ The 4 bit DIP switch sets unique runtime settings when in the 'ON' position; for
 | Switch | Decimal | Set Action                                                    |
 |--------|---------|---------------------------------------------------------------|
 | 1      | 1       | Force bootloader for DFU.                                     |
-| 2      | 2       | Enable Canapé internal configuration CAN IDs.                 |
+| 2      | 2       | Enable Entreé internal configuration CAN IDs.                 |
 | 3      | 4       | Enable VBUS -> VBS always not just when USB-PD profile valid. |
 | 4      | 8       | Enable 120 ohm CAN_H/CAN_L termination resistor               |
 
@@ -113,7 +113,7 @@ The 4 bit DIP switch sets unique runtime settings when in the 'ON' position; for
 
 The on-board USB-C controller (STUSB4500) is configured for 5 V / 1A power delivery by default (PDO 2). One can configure the controller using the below CAN bus commands when using the [**candleLight_fw**](https://github.com/tuna-f1sh/candleLight_fw) fork and with the [internal CAN IDs switch](#dip-switches) set.
 
-These commands are scrapped from the recieved gs_usb Tx commands and will not be forwarded to the CAN bus when the switch is set. Ensure the DLC is 8 bytes, the ID is correct and byte seven is the Canapé key '0xAF'.
+These commands are scrapped from the recieved gs_usb Tx commands and will not be forwarded to the CAN bus when the switch is set. Ensure the DLC is 8 bytes, the ID is correct and byte seven is the Entreé key '0xAF'.
 
 The commands are also scrapped from the `can_recieved` callback but for this to work a USB connection must be enumerated and CAN bus setup in order for the CAN perphieral to be enabled with the correct bit-timing. In the future I may save the previous bit-timing to flash in order to enable this without USB connection.
 
@@ -136,8 +136,8 @@ The commands are also scrapped from the `can_recieved` callback but for this to 
 
 ## Firmware
 
-* [**candleLight_fw Canapé fork**](https://github.com/tuna-f1sh/candleLight_fw) - [[BIN DOWNLOAD]](./bin/canape_fw.bin): Default firmware shipping with Canapé. Works with [Linux SocketCAN](#linux-socketcan) and the [Cangaroo](#cangaroo-gui) GUI. Includes support for configuration of the on-board STUSB4500 USB-C controller and DFU without setting DIP switch.
-* [**PCAN CANtact**](https://github.com/tuna-f1sh/pcan_cantact/tree/hsi48) - [[BIN DOWNLOAD]](./bin/pcan_canape_hw.bin): Open source PCAN compatible firmware; works like a PCAN USB adaptor with the PCAN software suite and python-can module. Does not include USB-PD configuration or DFU.
+* [**candleLight_fw Entreé fork**](https://github.com/tuna-f1sh/candleLight_fw) - [[BIN DOWNLOAD]](./bin/entree_fw.bin): Default firmware shipping with Entreé. Works with [Linux SocketCAN](#linux-socketcan) and the [Cangaroo](#cangaroo-gui) GUI. Includes support for configuration of the on-board STUSB4500 USB-C controller and DFU without setting DIP switch.
+* [**PCAN CANtact**](https://github.com/tuna-f1sh/pcan_cantact/tree/hsi48) - [[BIN DOWNLOAD]](./bin/pcan_entree_hw.bin): Open source PCAN compatible firmware; works like a PCAN USB adaptor with the PCAN software suite and python-can module. Does not include USB-PD configuration or DFU.
 * [**cantact_slcan**](https://github.com/normaldotcom/cantact-fw): slcand is a USART CAN daemon for Linux, which emulates a CAN network socket over USART. The pre-cursor of the candleLight_fw and gs_usb driver, it offers no real advantage since it is still over USB as a CDC. I've found it to drop frames at common bus rates and so do not recommend it. USART pins are exposed however if one wishes to play with slcan over physical USART. A virtual network interface can be created: `sudo slcand -o -s8 -t hw -S 3000000 /dev/ttyS0` and then used like a [SocketCAN](#linux-socketcan) interface.
 
 ### Update
@@ -151,8 +151,8 @@ sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D $FIRMWARE_FILE.bin
 Where `$FIRMWARE_FILE.bin` is the firmware file to be updated. Binaires are stored in the './bin' folder of this repository, so to flash:
 
 ```
-sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ./bin/canape_fw.bin # candleLight_fw
-sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ./bin/pcan_canape_hw.bin # pcan_cantact
+sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ./bin/entree_fw.bin # candleLight_fw
+sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ./bin/pcan_entree_hw.bin # pcan_cantact
 ```
 
 There is also a [Web DFU tool](https://devanlai.github.io/webdfu/dfu-util/), which does not require `dfu-util`. The only requirement is the Chrome browser. Use these settings:
@@ -162,7 +162,7 @@ There is also a [Web DFU tool](https://devanlai.github.io/webdfu/dfu-util/), whi
 
 # Credits
 
-The open source CAN community is large and this project adds to that in the true spirit of open source. The [canable](canable.io) devices (of which I have many!) started me on my journey into CAN hardware and software development. Canapé fixes areas I felt could be improved upon and brought up-to date.
+The open source CAN community is large and this project adds to that in the true spirit of open source. The [canable](canable.io) devices (of which I have many!) started me on my journey into CAN hardware and software development. Entreé fixes areas I felt could be improved upon and brought up-to date.
 
 Please find links below to projects that have supported the development of the open source CAN ecosystem.
 

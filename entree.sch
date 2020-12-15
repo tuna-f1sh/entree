@@ -4,7 +4,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "Canapé"
+Title "Entreé"
 Date "2020-12-07"
 Rev "0"
 Comp "JBR Engineering Research Ltd"
@@ -2048,7 +2048,7 @@ F 9 "" H 3755 4480 50  0001 C CNN "Config"
 	1    0    0    -1  
 $EndComp
 $Comp
-L canape-rescue:USB_C_Receptacle_USB2.0-Connector J?
+L Connector:USB_C_Receptacle_USB2.0 J?
 U 1 1 5E5B2BFA
 P 2230 2410
 AR Path="/5E1D22D5/5E5B2BFA" Ref="J?"  Part="1" 
@@ -2062,7 +2062,6 @@ F 4 "Amphenol ICC (Commercial Products)" H 2230 2410 50  0001 C CNN "MFN"
 F 5 "12401832E402A" H 2230 2410 50  0001 C CNN "MPN"
 F 6 "Digikey" H 2230 2410 50  0001 C CNN "Vendor"
 F 7 "12401832E402ACT-ND" H 2230 2410 50  0001 C CNN "SKU"
-F 8 "" H 2230 2410 50  0001 C CNN "Config"
 	1    2230 2410
 	1    0    0    -1  
 $EndComp

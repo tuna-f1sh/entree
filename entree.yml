@@ -13,7 +13,7 @@ templates: # defining templates to be used later on
     colors: [BK, RD, BU, YE]
 
 connectors:
-  canape-molex:
+  entree-molex:
     <<: *molex_pico_f
     pinlabels: [GND, CAN-, CAN+, VBUS]
     notes: VBUS can be forced or only enabled with valid USB-PD profile. Please see usage information.
@@ -22,7 +22,7 @@ connectors:
     autogenerate: true
     type: Pin header
     subtype: female 2.54 mm²
-  canape-jst:
+  entree-jst:
     type: JST SM04B
     subtype: female
     pinlabels: [VBUS, CAN+, CAN-, GND]
@@ -41,10 +41,10 @@ cables:
 
 connections:
   -
-    - canape-molex: [1,2,3,4]
+    - entree-molex: [1,2,3,4]
     - W1: [1,2,3,4]
     - header
   -
-    - canape-jst: [1,2,3,4]
+    - entree-jst: [1,2,3,4]
     - W2: [1,2,3,4]
     - header

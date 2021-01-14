@@ -6,6 +6,8 @@ Entreé - like a Canapé but tastier...yes the logo is, and name was, Canapé bu
 
 The Entreé is a USB-C CAN interface. It is a variant of the open source [candleLight](https://github.com/HubertD/candleLight) platform and its many spawns. Not only does it add USB-C, it brings new features and CAN/USB controlled USB-PD for powering devices under test.
 
+![Entreé PCBA](./img/entree-pcba.jpg)
+
 ## Features
 
 * Compatiable with:
@@ -24,7 +26,8 @@ The Entreé is a USB-C CAN interface. It is a variant of the open source [candle
 
 # Purchase
 
-An initial production assembly should be ready by the end of Janurary. I will sell them on Tindie and the [JBR Engineering shop](https://shop.jbrengineering.co.uk).
+* [JBR Engineering shop](https://shop.jbrengineering.co.uk).
+* [Tindie](https://www.tindie.com/products/22440/)
 
 # Usage
 
@@ -35,7 +38,6 @@ The primary CAN connection is a [Molex Picoblade _53261-0471_](https://www.digik
 The connector was selected because they are commonly used on Drones and so Picoblade to 0.1" header cables can also be easily obtained:
 
 * [1 Bit Sqaured Black Magic 0.1" female cable](https://1bitsquared.com/products/black-magic-01in-pin-header-serial-cable).
-* [Pixhawk/PX4/APM to 0.1" female cable](https://www.aliexpress.com/item/32705569941.html?spm=a2g0o.detail.0.0.43ec1ae2et4g6z&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=21c4d945-32e3-41ea-9cdc-e7fb39809427&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:21c4d945-32e3-41ea-9cdc-e7fb39809427,tpp_buckets:668%230%23131923%2399_668%23808%233772%23408_668%23888%233325%2319_668%232846%238107%2321_668%232717%237561%23332_668%231000022185%231000066059%230_668%233468%2315615%23624)
 
 Alternatively, one can obtain [pre-crimped female cable assemblies _15134-0402_](https://www.digikey.ch/product-detail/en/molex/0151340402/WM15258-ND/6198148) or [female 4-pin housing _51021-04_](https://www.digikey.ch/product-detail/en/molex/0510210400/WM1722-ND/242844) for custom cabling.
 
@@ -84,7 +86,7 @@ The Cangaroo GUI can be compiled for Linux hosts. See [Cangaroo](https://github.
 
 To use the default _candleLight_ firmware on Windows, one can use [Cangaroo](https://github.com/normaldotcom/cangaroo/): [Pre-compiled Win32 binary](https://www.dropbox.com/s/dyh9gvt572v8nhn/cangaroo-win32-0363ce7.zip?dl=0).
 
-The _PCAN_cantact_ firmware can be used with the [PCAN software suit](https://www.peak-system.com/Software.68.0.html?&L=1) and [Python](#python) modules.
+The _PCAN\_cantact_ firmware can be used with the [PCAN software suit](https://www.peak-system.com/Software.68.0.html?&L=1) and [Python](#python) modules.
 
 Alternatively, to use [SocketCAN](#linux-socketcan) one can use the pre-configured virtual machine explained at the start of the [Software section](#software).
 
@@ -105,7 +107,7 @@ The 4 bit DIP switch sets unique runtime settings when in the 'ON' position; for
 | 1      | 1       | Force bootloader for DFU.                                     |
 | 2      | 2       | Enable Entreé internal configuration CAN IDs.                 |
 | 3      | 4       | Enable VBUS -> VBS always not just when USB-PD profile valid. |
-| 4      | 8       | Enable 120 ohm CAN_H/CAN_L termination resistor               |
+| 4      | 8       | Enable 120 ohm CAN\_H/CAN\_L termination resistor               |
 
 **NOTE** both DFU and 'Enable VBUS' will require power cycling the device for the change to be reflected.
 

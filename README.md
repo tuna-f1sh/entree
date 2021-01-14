@@ -26,7 +26,7 @@ The Entreé is a USB-C CAN interface. It is a variant of the open source [candle
 
 # Purchase
 
-* [JBR Engineering shop](https://shop.jbrengineering.co.uk).
+* [JBR Engineering shop](https://shop.jbrengineering.co.uk/product/entree-usb-c-to-can-interface-with-usb-pd/).
 * [Tindie](https://www.tindie.com/products/22440/)
 
 # Usage

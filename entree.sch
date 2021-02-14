@@ -1543,7 +1543,7 @@ AR Path="/5E63C0A4" Ref="U1"  Part="1"
 F 0 "U1" H 3155 8025 50  0000 C CNN
 F 1 "STUSB4500QTR" H 3155 8125 50  0000 C CNN
 F 2 "KiCad/Package_DFN_QFN.pretty:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 2855 7600 50  0001 C CNN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwjMucG-xf7nAhVEhlwKHZwiBt0QFjABegQIBhAC&url=https%3A%2F%2Fwww.st.com%2Fresource%2Fen%2Fdatasheet%2Fstusb4500.pdf&usg=AOvVaw20vMqUU6zknpHuLJ7eGwwd" H 2855 8775 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stusb4500.pdf" H 2855 8775 50  0001 C CNN
 F 4 "STMicroelectronics" H 2855 8775 50  0001 C CNN "MFN"
 F 5 "STUSB4500QTR" H 2855 8775 50  0001 C CNN "MPN"
 F 6 "497-18060-1-ND" H 2855 8775 50  0001 C CNN "SKU"
@@ -1668,18 +1668,6 @@ F 3 "~" H 11700 4855 50  0001 C CNN
 F 4 "nofit" H 11500 4855 50  0001 C CNN "Config"
 	1    11500 4855
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5E775980
-P 8820 2325
-F 0 "C9" H 8820 2425 40  0000 L CNN
-F 1 "10uF" H 8826 2240 40  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8858 2175 30  0001 C CNN
-F 3 "" H 8820 2325 60  0000 C CNN
-F 4 "X5R 6V" H 8820 2325 50  0001 C CNN "Characteristics"
-	1    8820 2325
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C8
@@ -2128,5 +2116,17 @@ F 4 "X5R 25V" H 10715 7625 50  0001 C CNN "Characteristics"
 F 5 "" H 10715 7625 50  0001 C CNN "Config"
 	1    10715 7625
 	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5E775980
+P 8820 2325
+F 0 "C9" H 8820 2425 40  0000 L CNN
+F 1 "10uF" H 8826 2240 40  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0402_1005Metric" H 8858 2175 30  0001 C CNN
+F 3 "" H 8820 2325 60  0000 C CNN
+F 4 "X5R 6V" H 8820 2325 50  0001 C CNN "Characteristics"
+	1    8820 2325
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

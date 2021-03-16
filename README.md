@@ -23,6 +23,7 @@ The Entreé is a USB-C CAN interface. It is a variant of the open source [candle
 * Two signal connector choices.
 * Small form factor: 55 x 18.5 mm.
 * Silkscreen art 🎨!
+* [Web-DFU firmware update/selector tool](https://jbrengineering.co.uk/web-dfu/).
 
 # Purchase
 
@@ -124,6 +125,12 @@ Please refer to the [**candleLight_fw Entreé fork**](https://github.com/tuna-f1
 
 ### Update
 
+#### Web Updater
+
+Use the Web-DFU tool provided here: [https://www.jbrengineering.co.uk/web-dfu/](https://www.jbrengineering.co.uk/web-dfu/)
+
+#### Manual CLI
+
 Enable the DFU [DIP switch](#dip-switches) and then issue the following command with [`dfu-util`](http://dfu-util.sourceforge.net/):
 
 ```
@@ -137,18 +144,13 @@ sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ./bin/entree_fw.bin #
 sudo dfu-util -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ./bin/pcan_entree_hw.bin # pcan_cantact
 ```
 
-There is also a [Web DFU tool](https://devanlai.github.io/webdfu/dfu-util/), which does not require `dfu-util`. The only requirement is the Chrome browser. Use these settings:
-
-* Vendor ID: **0x0483**
-* Transfer Size: **2048**
-
 # Credits
 
 The open source CAN community is large and this project adds to that in the true spirit of open source. The [canable](canable.io) devices (of which I have many!) started me on my journey into CAN hardware and software development. Entreé fixes areas I felt could be improved upon and brought up-to date.
 
 Please find links below to projects that have supported the development of the open source CAN ecosystem.
 
-* [canable.io](canable.io)
+* [canable.io](https://canable.io)
 * [CANtact](https://wiki.linklayer.com/index.php/CANtact)
 * [candleLight](https://github.com/HubertD/candleLight)
 * [candleLight_fw](https://github.com/candle-usb/candleLight_fw)

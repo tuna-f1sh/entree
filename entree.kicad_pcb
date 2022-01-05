@@ -11,7 +11,7 @@
 
   (page A4)
   (title_block
-    (title Entreé)
+    (title Entrée)
     (date 2020-12-07)
     (rev 0)
     (company "JBR Engineering Research Ltd")
@@ -6854,7 +6854,7 @@
     )
   )
 
-  (gr_text "Entreé USB-C CAN Interface R0" (at 146.6 110.7) (layer B.SilkS)
+  (gr_text "Entrée USB-C CAN Interface R0" (at 146.6 110.7) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.2)) (justify mirror))
   )
   (gr_text "VBS\nCN+\nCN-\nGND" (at 177.471429 104.55) (layer B.SilkS) (tstamp 5FCE8B70)
@@ -6890,7 +6890,7 @@
   (gr_text "UART\n .RXD\n.TXD" (at 161.15 101.35) (layer F.SilkS)
     (effects (font (size 0.6 0.6) (thickness 0.1)) (justify left))
   )
-  (gr_text "Entreé USB-C Interface R0 - JBR Engineering" (at 146.95 111.15) (layer F.SilkS)
+  (gr_text "Entrée USB-C Interface R0 - JBR Engineering" (at 146.95 111.15) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15) italic))
   )
   (gr_poly (pts (xy 182.5 111.25) (xy 168 111.25) (xy 168 109.65) (xy 182.5 109.65)) (layer B.SilkS) (width 0.1) (tstamp 5FD0490D))

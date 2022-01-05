@@ -4,7 +4,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "Entreé"
+Title "Entrée"
 Date "2020-12-07"
 Rev "0"
 Comp "JBR Engineering Research Ltd"

@@ -3,7 +3,7 @@
 
 $msg = <<MSG
 ------------------------------------------------------
-Entreé Debian CAN party started! 
+Entrée Debian CAN party started! 
 
 Login to box with 'vagrant ssh', then use interface 'can0':
 

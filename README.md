@@ -12,7 +12,6 @@ The Entrée is a USB-C CAN interface. It is a variant of the open source [candle
 
 * Compatiable with:
     * gs_usb firmware [candleLight_fw](https://github.com/candle-usb/candleLight_fw); Linux mainline native support.
-    * [PCAN cantact](https://github.com/moonglow/pcan_cantact); Open-source (unofficial) PCAN suite compatible firmware.
     * [slcan cantact](https://github.com/normaldotcom/cantact-fw); Linux CAN over USART/CDC.
 * USB-C connection for use with modern hardware.
 * USB-PD negotiation for powering devices rather than using USB communication interface. Up-to 20 V/1 A can be requested and supplied to a device.
@@ -87,8 +86,6 @@ The Cangaroo GUI can be compiled for Linux hosts. See [Cangaroo](https://github.
 
 To use the default _candleLight_ firmware on Windows, one can use [Cangaroo](https://github.com/normaldotcom/cangaroo/): [Pre-compiled Win32 binary](https://www.dropbox.com/s/dyh9gvt572v8nhn/cangaroo-win32-0363ce7.zip?dl=0).
 
-The [_PCAN\_cantact_](https://github.com/moonglow/pcan_cantact) firmware can be used with the [PCAN software suit](https://www.peak-system.com/Software.68.0.html?&L=1) and [Python](#python) modules. **NOTE: this firmware in no way supported or endorsed by _Peak System_.**
-
 Alternatively, to use [SocketCAN](#linux-socketcan) one can use the pre-configured virtual machine explained at the start of the [Software section](#software).
 
 ### Python
@@ -120,7 +117,6 @@ Please refer to the [**candleLight_fw Entrée fork**](https://github.com/tuna-f1
 ## Firmware
 
 * [**candleLight_fw Entrée fork**](https://github.com/tuna-f1sh/candleLight_fw) - [[BIN DOWNLOAD]](./bin/entree_fw_101.bin): Default firmware shipping with Entrée. Works with [Linux SocketCAN](#linux-socketcan) and the [Cangaroo](#cangaroo-gui) GUI. Includes support for configuration of the on-board STUSB4500 USB-C controller and DFU without setting DIP switch.
-* [**PCAN CANtact**](https://github.com/moonglow/pcan_cantact): Open source _PCAN_ compatible firmware\*; works like a PCAN USB adaptor with the PCAN software suite and python-can module. Does not include USB-PD configuration or DFU. \*Not supported or endorsed by _Peak System_.
 * [**cantact_slcan**](https://github.com/normaldotcom/cantact-fw): slcand is a USART CAN daemon for Linux, which emulates a CAN network socket over USART. The pre-cursor of the candleLight_fw and gs_usb driver, it offers no real advantage since it is still over USB as a CDC. I've found it to drop frames at common bus rates and so do not recommend it. USART pins are exposed however if one wishes to play with slcan over physical USART. A virtual network interface can be created: `sudo slcand -o -s8 -t hw -S 3000000 /dev/ttyS0` and then used like a [SocketCAN](#linux-socketcan) interface.
 
 ### Update

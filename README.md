@@ -1,4 +1,4 @@
-![Entrée logo](./img/entree_logo.png)
+![Entrée backside](./img/entree-backside-oak.jpg)
 
 # Entrée USB-C CAN Interface
 

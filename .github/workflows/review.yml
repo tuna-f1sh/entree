@@ -1,0 +1,45 @@
+name: Make SCH and PCB review pdf
+
+env:
+  PROJECT_NAME: entree
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - 'Makefile'
+      - '.github/workflows/build.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - 'Makefile'
+      - '.github/workflows/build.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/tuna-f1sh/kicad-makefile:latest
+      # mount the workspace path to container workdir /project so accessible by all steps
+      volumes:
+        - ${{ github.workspace }}:/project
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Prepare
+        # https://github.com/actions/runner/issues/2033
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Run make pdf
+        run: make pdf
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.PROJECT_NAME }}-review-pdf
+          path: output/*.pdf

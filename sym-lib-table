@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name entree-rescue)(type Legacy)(uri ${KIPRJMOD}/entree-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "entree-rescue")(type "KiCad")(uri "${KIPRJMOD}/entree-rescue.kicad_sym")(options "")(descr ""))
 )

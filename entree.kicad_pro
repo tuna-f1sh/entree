@@ -45,11 +45,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.15
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "courtyards_overlap|150977360|107713816|00000000-0000-0000-0000-00005fccf751|00000000-0000-0000-0000-00005fccf759",
+        "courtyards_overlap|177200001|107490193|00000000-0000-0000-0000-00005fccf6e0|3ec313ff-2c96-4079-9d40-f92d4f1fcdde",
+        "lib_footprint_issues|155905630|102787012|00000000-0000-0000-0000-00005fcf6fed|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|174657937|95951687|00000000-0000-0000-0000-00005fd04768|00000000-0000-0000-0000-000000000000",
+        "solder_mask_bridge|156095000|94675000|72cfb6b8-e4fc-40ee-b9d6-bde68d295855|3e8f8800-9cb8-4863-a984-668ef27f6e54"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -117,7 +129,7 @@
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.6,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.15,

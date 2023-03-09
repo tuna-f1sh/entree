@@ -10,14 +10,14 @@ on:
       - '**.kicad_sch'
       - '**.kicad_pcb'
       - 'Makefile'
-      - '.github/workflows/build.yml'
+      - '.github/workflows/review.yml'
   pull_request:
     branches: [ main ]
     paths:
       - '**.kicad_sch'
       - '**.kicad_pcb'
       - 'Makefile'
-      - '.github/workflows/build.yml'
+      - '.github/workflows/review.yml'
 
 jobs:
   build:

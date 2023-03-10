@@ -5,6 +5,7 @@ env:
   MAKE_DEFAULT: false
   MAKE_PDF: true
   MAKE_PROD: false
+  MAKE_REF: false
 
 on:
   workflow_dispatch:
@@ -33,14 +34,22 @@ jobs:
 
       - name: Run make pdf
         if: ${{ env.MAKE_PDF }}
+        # merged pdf
         run: make pdf
 
-      - name: Run make prod-
+      - name: Run make prod-*
         if: ${{ env.MAKE_PROD }}
         run: |
+          # separated as most suppliers ask for this
           make prod-gerbers
           make prod-bom
           make prod-pos
+
+      - name: Run make dist-ref
+        if: ${{ env.MAKE_REF }}
+        run: |
+          # pcb and sch renders
+          make dist-ref
 
       - name: Upload outputs
         uses: actions/upload-artifact@v3

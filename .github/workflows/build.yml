@@ -32,16 +32,16 @@ jobs:
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
       - name: Run make
-        if: ${{ env.MAKE_DEFAULT }}
+        if: ${{ env.MAKE_DEFAULT == 'true' }}
         run: make
 
       - name: Run make pdf
-        if: ${{ env.MAKE_PDF }}
+        if: ${{ env.MAKE_PDF == 'true' }}
         # merged pdf
         run: make pdf
 
       - name: Run make prod-*
-        if: ${{ env.MAKE_PROD }}
+        if: ${{ env.MAKE_PROD == 'true' }}
         run: |
           # separated as most suppliers ask for this
           make prod-gerbers
@@ -49,7 +49,7 @@ jobs:
           make prod-pos
 
       - name: Run make dist-ref
-        if: ${{ env.MAKE_REF }}
+        if: ${{ env.MAKE_REF == 'true' }}
         run: |
           # pcb and sch renders
           make dist-ref

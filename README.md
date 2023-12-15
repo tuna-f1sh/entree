@@ -23,6 +23,7 @@ The Entrée is a USB-C CAN interface. It is a variant of the open source [candle
 * Small form factor: 55 x 18.5 mm.
 * Silkscreen art 🎨!
 * [Web-DFU firmware update/selector tool](https://jbrengineering.co.uk/web-dfu/).
+* [3d printed case](https://www.printables.com/model/681455-entree-usb-c-can-interface-case)
 
 # Purchase
 

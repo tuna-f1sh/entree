@@ -1,7 +1,6 @@
 name: Build distributable and production files
 
 env:
-  PROJECT_NAME: entree
   MAKE_DEFAULT: false
   MAKE_PDF: true
   MAKE_PROD: false
@@ -25,7 +24,7 @@ jobs:
         - ${{ github.workspace }}:/project
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Prepare
         # https://github.com/actions/runner/issues/2033

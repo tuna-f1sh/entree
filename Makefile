@@ -14,6 +14,8 @@ KICADMK_APPEND_GIT ?= 1
 # Define and set to 1 to print the log content at start to shell
 # KICADMK_PRINT_LOG = 0
 PCB_PDF_FLAGS = --ibt
+SCH_ERC_FLAGS = --severity-error
+PCB_DRC_FLAGS = --severity-error
 
 # Define a command that generates a BoM - kibom installed with pip by default but could be path to Python script
 BOM_CMD ?= kibom

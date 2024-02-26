@@ -29,11 +29,14 @@ jobs:
         - ${{ github.workspace }}:/project
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Prepare
         # https://github.com/actions/runner/issues/2033
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Check rules
+        run: make rules
 
       - name: Run make pdf
         run: make pdf
@@ -41,5 +44,8 @@ jobs:
       - name: Upload outputs
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.PROJECT_NAME }}-review-pdf
-          path: output/*.pdf
+          name: ${{ env.PROJECT_NAME }}-review
+          path: |
+            output/*.pdf
+            output/sch/*.rpt
+            output/pcb/*.rpt

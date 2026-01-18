@@ -80,14 +80,6 @@
           ""
         ],
         [
-          "shorting_items|156725000|97425000|bc7fa3e1-68b7-401f-bc13-9108cae4558a|e24a8740-ca05-4141-b0b3-230f2bb5eafd",
-          ""
-        ],
-        [
-          "solder_mask_bridge|156095000|94675000|55ad862e-d5b1-4cf4-bf56-574d21788eb6|e24a8740-ca05-4141-b0b3-230f2bb5eafd",
-          ""
-        ],
-        [
           "starved_thermal|149500000|97030000|00000000-0000-0000-0000-00005eafb707|d1c96cdb-a2b1-43ce-95b1-de4cf13eb1ee|F.Cu",
           ""
         ],
@@ -500,6 +492,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"

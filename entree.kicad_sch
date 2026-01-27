@@ -7369,14 +7369,6 @@
 		(uuid "3c9fa7fd-2d26-405a-b7e4-aa25b88f7917")
 	)
 	(no_connect
-		(at 143.51 170.18)
-		(uuid "3d72d02d-f46a-4460-a3d1-6ed9eb93b290")
-	)
-	(no_connect
-		(at 143.51 175.26)
-		(uuid "4d4a055e-dfc3-45e1-8fcc-d3fb6b7fe84a")
-	)
-	(no_connect
 		(at 143.51 195.58)
 		(uuid "5de22cfd-6823-444e-85e0-e7e141e00150")
 	)
@@ -7411,10 +7403,6 @@
 	(no_connect
 		(at 143.51 226.06)
 		(uuid "ba88add9-6b57-4b0c-a018-7f4b6fe59f29")
-	)
-	(no_connect
-		(at 87.63 177.8)
-		(uuid "c2c8727f-b81a-4915-9ed4-cfe7ef874b76")
 	)
 	(wire
 		(pts
@@ -8098,6 +8086,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 175.26) (xy 143.51 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48cb8ee5-7a19-4426-a130-422914cc2bb8")
+	)
+	(wire
+		(pts
 			(xy 322.58 209.55) (xy 330.2 209.55)
 		)
 		(stroke
@@ -8315,6 +8313,16 @@
 			(type default)
 		)
 		(uuid "5944acc9-4a83-4e39-b046-dd1ef6e09c98")
+	)
+	(wire
+		(pts
+			(xy 153.67 170.18) (xy 143.51 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf5dcd9-c0c9-4b91-896d-fef48b5557d6")
 	)
 	(wire
 		(pts
@@ -9928,7 +9936,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 172.72) (xy 87.63 172.72)
+			(xy 77.47 177.8) (xy 87.63 177.8)
 		)
 		(stroke
 			(width 0)
@@ -10456,6 +10464,26 @@
 			)
 		)
 	)
+	(global_label "CC1"
+		(shape passive)
+		(at 153.67 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d84e217-9dba-4968-94ba-737b007fc847")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.67 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB-"
 		(shape bidirectional)
 		(at 153.67 167.64 0)
@@ -10468,6 +10496,26 @@
 		(uuid "657ba738-d08e-4ce6-abe9-8800f526fd34")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 153.67 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CC2"
+		(shape passive)
+		(at 153.67 175.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "72eca0bb-b586-4aad-8768-875878aea7ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.67 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10658,7 +10706,7 @@
 	)
 	(global_label "~{DEV_ON}"
 		(shape input)
-		(at 77.47 172.72 180)
+		(at 77.47 177.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10667,7 +10715,7 @@
 		)
 		(uuid "91fdee6c-33a9-4dc3-9428-1f7eba6a9a10")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 172.72 0)
+			(at 77.47 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17963,7 +18011,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-4_4.4x4.3mm_P2.54mm"
+		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:VSON4_TOS"
 			(at 349.25 200.66 0)
 			(effects
 				(font
@@ -18622,7 +18670,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 316.23 49.53 0)
 			(effects
 				(font
@@ -19043,7 +19091,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-4_4.4x4.3mm_P2.54mm"
+		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:VSON4_TOS"
 			(at 349.25 218.44 0)
 			(effects
 				(font

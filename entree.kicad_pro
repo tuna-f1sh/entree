@@ -60,27 +60,11 @@
       ],
       "drc_exclusions": [
         [
-          "courtyards_overlap|150988852|107712315|00000000-0000-0000-0000-00005fccf751|00000000-0000-0000-0000-00005fccf759",
-          ""
-        ],
-        [
-          "courtyards_overlap|177205000|108517857|00000000-0000-0000-0000-00005fccf6e0|3ec313ff-2c96-4079-9d40-f92d4f1fcdde",
-          ""
-        ],
-        [
-          "courtyards_overlap|177369778|98865000|00000000-0000-0000-0000-00005fccf6e0|6b9e1433-570b-485c-94d8-1c15c770c81b",
-          ""
-        ],
-        [
           "lib_footprint_issues|155905630|102787012|00000000-0000-0000-0000-00005fcf6fed|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
           "lib_footprint_issues|174657937|95951687|00000000-0000-0000-0000-00005fd04768|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "starved_thermal|149500000|97030000|00000000-0000-0000-0000-00005eafb707|d1c96cdb-a2b1-43ce-95b1-de4cf13eb1ee|F.Cu",
           ""
         ]
       ],
@@ -217,7 +201,7 @@
       ],
       "track_widths": [
         0.0,
-        0.5
+        0.4
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -824,25 +808,7 @@
           "group_by": false,
           "label": "Config",
           "name": "Config",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field4",
-          "name": "Field4",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field5",
-          "name": "Field5",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field6",
-          "name": "Field6",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -878,6 +844,12 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
           "show": false
         }
       ],

@@ -1,4 +1,4 @@
-27524745649605464
+27519514571405845
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -108311,13 +108311,6 @@ VSON4
 4
 4
 tuna-f1sh/jbr-kicad/Misc.pretty
-VSON4_TOS
-
-TLP3403TP_F 
-0
-4
-4
-tuna-f1sh/jbr-kicad/Misc.pretty
 WS2020_STRIP_PADS
 
 
@@ -108331,13 +108324,6 @@ XDCR_STEVAL-STLCS01V1
 0
 18
 18
-tuna-f1sh/jbr-kicad/Misc.pretty
-XTAL_NX3225GD-8MHZ-STD-CRA-3_NDK
-
-NX3225GD-8MHZ-STD-CRA-3 
-0
-2
-2
 tuna-f1sh/jbr-kicad/Misc.pretty
 axs-battery-pads
 
@@ -109129,10 +109115,3 @@ QFN-28L
 0
 29
 29
-tuna-f1sh/jbr-kicad/SnapEDA.pretty
-CONV_MPM3610GQV-P
-
-
-0
-14
-14

@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.125
         }
       },
       "diff_pair_dimensions": [
@@ -76,7 +76,7 @@
           ""
         ],
         [
-          "extra_footprint|156300000|103000000|00000000-0000-0000-0000-00005fcf6fed|00000000-0000-0000-0000-000000000000",
+          "extra_footprint|156921793|103000000|00000000-0000-0000-0000-00005fcf6fed|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -84,7 +84,23 @@
           ""
         ],
         [
-          "lib_footprint_issues|155905630|102787012|00000000-0000-0000-0000-00005fcf6fed|00000000-0000-0000-0000-000000000000",
+          "hole_clearance|140005000|104170000|54bc8201-8bef-4aef-81f2-a325d39cc5e2|cac6662f-e91e-44de-a576-79f53ce8d201",
+          ""
+        ],
+        [
+          "hole_clearance|140005000|104170000|82c49af0-04e1-4e50-9c40-6a1e3f9f3f98|cac6662f-e91e-44de-a576-79f53ce8d201",
+          ""
+        ],
+        [
+          "hole_clearance|140005000|98070000|70a8b812-717c-463e-9446-9a75872b31e5|9defe9df-b46f-40dd-a647-4bcefe90cae5",
+          ""
+        ],
+        [
+          "hole_clearance|140005000|98070000|a8c31537-f55c-4d22-8156-58a752b995c3|9defe9df-b46f-40dd-a647-4bcefe90cae5",
+          ""
+        ],
+        [
+          "lib_footprint_issues|156527423|102787012|00000000-0000-0000-0000-00005fcf6fed|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -97,6 +113,14 @@
         ],
         [
           "lib_footprint_mismatch|176100000|106275000|00000000-0000-0000-0000-00005e6cc463|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "starved_thermal|140430000|97920000|00000000-0000-0000-0000-00005eafb707|70a8b812-717c-463e-9446-9a75872b31e5|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|140430000|97920000|00000000-0000-0000-0000-00005eafb707|a8c31537-f55c-4d22-8156-58a752b995c3|F.Cu",
           ""
         ]
       ],
@@ -233,7 +257,7 @@
       ],
       "track_widths": [
         0.0,
-        0.5
+        0.4
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -804,19 +828,19 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -840,37 +864,19 @@
           "group_by": false,
           "label": "Config",
           "name": "Config",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Field4",
-          "name": "Field4",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field5",
-          "name": "Field5",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field6",
-          "name": "Field6",
           "show": false
         },
         {
           "group_by": false,
           "label": "MFN",
           "name": "MFN",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -882,13 +888,13 @@
           "group_by": false,
           "label": "SKU",
           "name": "SKU",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Vendor",
           "name": "Vendor",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -900,6 +906,12 @@
           "group_by": false,
           "label": "Sim.Pins",
           "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
           "show": false
         }
       ],

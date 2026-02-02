@@ -7480,7 +7480,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 113.03) (xy 82.55 116.84)
+			(xy 83.82 113.03) (xy 83.82 116.84)
 		)
 		(stroke
 			(width 0)
@@ -7660,7 +7660,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 113.03) (xy 82.55 113.03)
+			(xy 78.74 113.03) (xy 83.82 113.03)
 		)
 		(stroke
 			(width 0)
@@ -8490,7 +8490,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 128.27) (xy 82.55 128.27)
+			(xy 78.74 128.27) (xy 83.82 128.27)
 		)
 		(stroke
 			(width 0)
@@ -9330,7 +9330,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 128.27) (xy 82.55 124.46)
+			(xy 83.82 128.27) (xy 83.82 124.46)
 		)
 		(stroke
 			(width 0)
@@ -10900,6 +10900,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C285038"
+			(at 344.17 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4b3d2cc9-2256-4b33-b763-efc2ff9e81e8")
 		)
@@ -11357,6 +11366,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5197386"
+			(at 119.38 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bc0e9d7e-1d4d-4e7c-931f-485795187464")
 		)
@@ -11474,7 +11492,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 44.45 50.8 0)
 			(effects
 				(font
@@ -11556,6 +11574,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 40.64 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5184243"
 			(at 40.64 50.8 0)
 			(effects
 				(font
@@ -11964,6 +11991,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2845381"
+			(at 383.54 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6aa66ae8-0849-4d33-bd34-7d669642938d")
 		)
@@ -12318,7 +12354,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 82.55 120.65 0)
+		(at 83.82 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12326,7 +12362,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e77594d")
 		(property "Reference" "C10"
-			(at 82.55 118.11 0)
+			(at 83.82 118.11 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -12335,7 +12371,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 82.7024 122.809 0)
+			(at 83.9724 122.809 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -12344,7 +12380,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 83.5152 124.46 0)
+			(at 84.7852 124.46 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12353,7 +12389,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 120.65 0)
+			(at 83.82 120.65 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -12361,7 +12397,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 82.55 120.65 0)
+			(at 83.82 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12370,7 +12406,16 @@
 			)
 		)
 		(property "Characteristics" "X5R 6V"
-			(at 82.55 120.65 0)
+			(at 83.82 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23733"
+			(at 83.82 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12519,6 +12564,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14445"
+			(at 68.58 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3c3e758a-9105-48a7-99f7-edbc6d77d890")
 		)
@@ -12588,6 +12642,15 @@
 			)
 		)
 		(property "Characteristics" "X5R 25V"
+			(at 73.66 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14445"
 			(at 73.66 120.65 0)
 			(effects
 				(font
@@ -12738,6 +12801,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C15525"
+			(at 78.74 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cb528116-fd72-4c21-a44b-f523da82f819")
 		)
@@ -12877,6 +12949,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5246833"
+			(at 205.74 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed9ebc9e-4465-4da0-8e93-014b35a469ed")
 		)
@@ -12965,6 +13046,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 205.74 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4c9ff5b3-2e63-4b3a-bf7d-e5089a12ce45")
 		)
@@ -13045,6 +13135,15 @@
 			)
 		)
 		(property "Config" ""
+			(at 198.12 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
 			(at 198.12 261.62 0)
 			(effects
 				(font
@@ -13184,6 +13283,15 @@
 			)
 		)
 		(property "Notes" ""
+			(at 198.12 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5189028"
 			(at 198.12 252.73 0)
 			(effects
 				(font
@@ -13517,6 +13625,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 38.1 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "088d77c8-9570-49f3-98c8-40fc41c0c942")
 		)
@@ -13649,6 +13766,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1548"
+			(at 29.21 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f45bc353-27a4-4334-b274-ed95c1437574")
 		)
@@ -13719,6 +13845,15 @@
 			)
 		)
 		(property "Characteristics" "NPO 6V"
+			(at 46.99 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1548"
 			(at 46.99 175.26 0)
 			(effects
 				(font
@@ -13897,6 +14032,15 @@
 			)
 		)
 		(property "Config" "dnf"
+			(at 383.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 383.54 72.39 0)
 			(effects
 				(font
@@ -14174,6 +14318,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25531"
+			(at 90.17 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fcc77889-4f8c-4313-af62-5e3e52c3b0e6")
 		)
@@ -14255,6 +14408,15 @@
 		)
 		(property "Config" ""
 			(at 269.24 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 269.24 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14369,7 +14531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
 			(at 40.64 73.66 0)
 			(effects
 				(font
@@ -14451,6 +14613,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 35.56 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 35.56 73.66 0)
 			(effects
 				(font
@@ -14582,6 +14753,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 154.94 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 154.94 144.78 0)
 			(effects
 				(font
@@ -14788,6 +14968,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C575431"
+			(at 190.5 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d2331fbb-4f21-4d0e-9646-98dee1bdebe4")
 		)
@@ -14921,6 +15110,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 78.74 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a7370b0-3349-4a90-8499-f389197ff312")
 		)
@@ -15045,6 +15243,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 214.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C45783"
 			(at 214.63 50.8 0)
 			(effects
 				(font
@@ -15186,6 +15393,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 151.13 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 151.13 193.04 0)
 			(effects
 				(font
@@ -15455,6 +15671,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 154.94 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7302992e-d7ed-4250-b8c5-12d58c25173d")
 		)
@@ -15533,6 +15758,15 @@
 		)
 		(property "Config" ""
 			(at 76.2 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 76.2 177.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15628,6 +15862,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 213.36 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b8859c4-3629-43d1-93d1-016c91232dc4")
 		)
@@ -15708,6 +15951,15 @@
 			)
 		)
 		(property "Config" ""
+			(at 344.17 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
 			(at 344.17 185.42 0)
 			(effects
 				(font
@@ -15914,6 +16166,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17168"
+			(at 171.45 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84c763f7-7826-46fa-8356-2ceec19dbab8")
 		)
@@ -16102,6 +16363,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 295.91 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 295.91 40.64 0)
 			(effects
 				(font
@@ -16309,6 +16579,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 153.67 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8460f6d9-a733-4e5d-b231-19db45098afb")
 		)
@@ -16505,6 +16784,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 365.76 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a8b2f670-e30a-4460-bdc9-370184918b8e")
 		)
@@ -16636,6 +16924,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 331.47 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f52e78f5-74f6-4667-a3f7-c3e727290b88")
 		)
@@ -16752,6 +17049,15 @@
 			)
 		)
 		(property "SKU" "5399-2N7002TR-ND"
+			(at 320.04 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C8545"
 			(at 320.04 222.25 0)
 			(effects
 				(font
@@ -16897,6 +17203,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 153.67 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b9d82566-2ef5-4825-8037-d784d2b97a3b")
 		)
@@ -17025,6 +17340,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 213.36 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5879214"
 			(at 213.36 252.73 0)
 			(effects
 				(font
@@ -17167,6 +17491,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 153.67 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff59a236-83f2-4007-ba92-58f8584cadbf")
 		)
@@ -17232,7 +17565,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" ""
+		(property "MFN" "Nidec Components Corporation"
 			(at 256.54 134.62 0)
 			(effects
 				(font
@@ -17241,7 +17574,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CHS-02TA"
 			(at 256.54 134.62 0)
 			(effects
 				(font
@@ -17287,6 +17620,15 @@
 			)
 		)
 		(property "Characteristics" "SWITCH SLIDE DIP SPST 0.1A 6V"
+			(at 256.54 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2921606"
 			(at 256.54 134.62 0)
 			(effects
 				(font
@@ -17434,6 +17776,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25531"
+			(at 308.61 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cb9502a0-9330-4b3b-945d-459cbd41af9d")
 		)
@@ -17568,6 +17919,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 300.99 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "67d6627f-8a50-4a32-abb7-b4c9763af6c1")
 		)
@@ -17598,7 +17958,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "8pF"
+		(property "Value" "10pF"
 			(at 29.464 146.812 0)
 			(effects
 				(font
@@ -17689,6 +18049,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 29.21 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 29.21 144.78 0)
 			(effects
 				(font
@@ -17831,6 +18200,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 365.76 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "03113da4-2c51-4a06-b358-d46a2db65c78")
 		)
@@ -17908,6 +18286,15 @@
 			)
 		)
 		(property "Config" ""
+			(at 335.28 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
 			(at 335.28 185.42 0)
 			(effects
 				(font
@@ -18042,6 +18429,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 270.51 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 270.51 54.61 0)
 			(effects
 				(font
@@ -18238,6 +18634,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 153.67 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 153.67 220.98 0)
 			(effects
 				(font
@@ -18508,6 +18913,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7124369"
+			(at 354.33 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "28d9823b-518d-4719-919d-64d5b0a89afc")
 		)
@@ -18638,6 +19052,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 370.84 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C285038"
 			(at 370.84 222.25 0)
 			(effects
 				(font
@@ -18781,6 +19204,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 151.13 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1bc8e563-7367-4ccd-8bb6-b3f125fb42db")
 		)
@@ -18884,6 +19316,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C194383"
+			(at 377.19 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "637b3f8e-33af-4fb5-a888-9d5dd12fc33c")
 		)
@@ -18926,7 +19367,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2u2"
+		(property "Value" "2.2u"
 			(at 164.211 51.943 0)
 			(effects
 				(font
@@ -19017,6 +19458,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 161.29 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2178868"
 			(at 161.29 50.8 0)
 			(effects
 				(font
@@ -19164,6 +19614,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25531"
+			(at 278.13 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f477092-cc3e-4e55-a46e-dd45d0d112d0")
 		)
@@ -19279,7 +19738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
 			(at 236.22 35.56 0)
 			(effects
 				(font
@@ -19361,6 +19820,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 231.14 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 231.14 35.56 0)
 			(effects
 				(font
@@ -19454,6 +19922,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 190.5 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "16a55a2e-cfe8-4051-a46c-f2f09002ec07")
 		)
@@ -19535,6 +20012,15 @@
 		)
 		(property "Config" ""
 			(at 171.45 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 171.45 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19676,6 +20162,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7124369"
+			(at 354.33 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "72e12690-1e8e-4e5e-b227-21e145105c24")
 		)
@@ -19808,6 +20303,15 @@
 			)
 		)
 		(property "Characteristics" "IC MCU 32BIT 512KB FLSH 48UFQFPN"
+			(at 115.57 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2829190"
 			(at 115.57 185.42 0)
 			(effects
 				(font
@@ -20091,6 +20595,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 154.94 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d70f2eb7-702d-4232-8b50-8b775b1f8b02")
 		)
@@ -20220,6 +20733,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C285038"
+			(at 99.06 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c99f195a-0ecc-4bae-8793-f63d1dc75167")
 		)
@@ -20325,7 +20847,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60R"
+		(property "Value" "60.4R"
 			(at 370.078 186.436 0)
 			(effects
 				(font
@@ -20352,7 +20874,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "60.4 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 370.84 185.42 0)
 			(effects
 				(font
@@ -20397,7 +20919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" ""
+		(property "Notes" "Termination series"
 			(at 370.84 185.42 0)
 			(effects
 				(font
@@ -20416,6 +20938,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 370.84 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C60310"
 			(at 370.84 185.42 0)
 			(effects
 				(font
@@ -20601,6 +21132,15 @@
 			)
 		)
 		(property "Vendor" "Digikey"
+			(at 179.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C659349"
 			(at 179.07 43.18 0)
 			(effects
 				(font
@@ -20951,6 +21491,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C191005"
+			(at 350.52 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "9f23948e-1e6a-4546-b649-5d9a9a3f4de2")
 		)
@@ -21265,7 +21814,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "8pF"
+		(property "Value" "10pF"
 			(at 47.244 146.812 0)
 			(effects
 				(font
@@ -21356,6 +21905,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 46.99 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 46.99 144.78 0)
 			(effects
 				(font
@@ -21562,6 +22120,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 157.48 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9e4e4cb8-0868-4d6c-b033-8b943c3686cd")
 		)
@@ -21693,6 +22260,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 153.67 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5c87d659-2d93-4667-872c-8b5193f76b5f")
 		)
@@ -21814,6 +22390,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 193.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1523"
 			(at 193.04 50.8 0)
 			(effects
 				(font
@@ -21961,6 +22546,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 73.66 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "319eb311-a10e-4307-8abd-91e56efbceee")
 		)
@@ -21994,7 +22588,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2u2"
+		(property "Value" "2.2u"
 			(at 207.391 51.943 0)
 			(effects
 				(font
@@ -22085,6 +22679,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 204.47 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2178868"
 			(at 204.47 50.8 0)
 			(effects
 				(font
@@ -22233,6 +22836,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 153.67 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ef9676d8-93e5-4f47-9a6a-b9a8e9f74f86")
 		)
@@ -22365,6 +22977,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 151.13 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4a811200-dde8-4128-b37d-04710d75d661")
 		)
@@ -22467,7 +23088,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60R"
+		(property "Value" "60.4R"
 			(at 382.778 186.436 0)
 			(effects
 				(font
@@ -22494,7 +23115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "60.4 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 383.54 185.42 0)
 			(effects
 				(font
@@ -22539,7 +23160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" ""
+		(property "Notes" "Termination series"
 			(at 383.54 185.42 0)
 			(effects
 				(font
@@ -22558,6 +23179,15 @@
 			)
 		)
 		(property "SKU" ""
+			(at 383.54 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C60310"
 			(at 383.54 185.42 0)
 			(effects
 				(font
@@ -22700,6 +23330,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 331.47 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f2d1cc4c-91c8-43a6-9026-f53b6e84cc21")
 		)
@@ -22755,7 +23394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Two pin crystal"
+		(property "Description" "8 MHz ±50ppm Crystal 8pF 500 Ohms 2-SMD, No Lead"
 			(at 38.1 140.97 0)
 			(effects
 				(font
@@ -22819,6 +23458,15 @@
 			)
 		)
 		(property "Characteristics" "CRYSTAL 8.0000MHZ 8PF SMD"
+			(at 38.1 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C889706"
 			(at 38.1 140.97 0)
 			(effects
 				(font
@@ -23280,6 +23928,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2149830"
+			(at 295.91 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2abbd3b7-196d-478c-8760-0164799ebb36")
 		)
@@ -23416,6 +24073,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 67.31 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 67.31 254 0)
 			(effects
 				(font
@@ -23562,6 +24228,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 154.94 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 154.94 147.32 0)
 			(effects
 				(font

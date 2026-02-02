@@ -18691,7 +18691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
 			(at 146.05 187.96 0)
 			(effects
 				(font
@@ -22275,7 +22275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
 			(at 146.05 190.5 0)
 			(effects
 				(font

@@ -21059,7 +21059,7 @@
 				)
 			)
 		)
-		(property "Value" "ADP7118ACPZN"
+		(property "Value" "ADI ADP7118ACPZN3.3-R7"
 			(at 179.07 37.0111 0)
 			(effects
 				(font
@@ -21140,7 +21140,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C659349"
+		(property "LCSC" "C659348"
+			(at 179.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Config" ""
+			(at 179.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
 			(at 179.07 43.18 0)
 			(effects
 				(font

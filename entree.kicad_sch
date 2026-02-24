@@ -1712,6 +1712,174 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:BAS16W"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BAS16W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAS16_SER.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V, 0.175A, High-speed Switching Diode, SOT-323"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?323*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BAS16W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BAS16W_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -1.27 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Interface_CAN_LIN:TCAN334G"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7053,7 +7221,7 @@
 		(uuid "46d87515-2f1f-447c-859a-18e0b5654f41")
 	)
 	(junction
-		(at 312.42 43.18)
+		(at 323.85 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4befd716-4bbb-46bf-89b9-06833afcd79a")
@@ -7607,16 +7775,6 @@
 			(type default)
 		)
 		(uuid "2284e84c-b444-47d4-a4bf-9e626cda66e1")
-	)
-	(wire
-		(pts
-			(xy 271.78 132.08) (xy 274.32 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22a1801f-2950-4567-b4e2-e7db96d158e0")
 	)
 	(wire
 		(pts
@@ -8680,7 +8838,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 132.08) (xy 266.7 132.08)
+			(xy 264.16 132.08) (xy 274.32 132.08)
 		)
 		(stroke
 			(width 0)
@@ -8880,7 +9038,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 43.18) (xy 312.42 52.07)
+			(xy 323.85 43.18) (xy 323.85 52.07)
 		)
 		(stroke
 			(width 0)
@@ -8960,7 +9118,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 38.1) (xy 312.42 43.18)
+			(xy 323.85 38.1) (xy 323.85 43.18)
 		)
 		(stroke
 			(width 0)
@@ -9017,6 +9175,16 @@
 			(type default)
 		)
 		(uuid "c034d586-e062-4b8c-9f2b-4b5b5b498b00")
+	)
+	(wire
+		(pts
+			(xy 318.77 52.07) (xy 323.85 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c078c1d6-c7bd-4007-b1ec-eb0e768a009f")
 	)
 	(wire
 		(pts
@@ -9700,7 +9868,7 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 52.07) (xy 312.42 52.07)
+			(xy 306.07 52.07) (xy 311.15 52.07)
 		)
 		(stroke
 			(width 0)
@@ -14343,103 +14511,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 269.24 132.08 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ff2a019")
-		(property "Reference" "R14"
-			(at 269.494 130.048 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 272.288 130.048 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 269.24 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 269.24 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 269.24 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" "5%"
-			(at 269.24 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" ""
-			(at 269.24 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 269.24 132.08 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e8d08142-0583-44ee-802e-034540b0bb21")
-		)
-		(pin "2"
-			(uuid "f79132b1-94d6-4c52-99a3-f2c16415df35")
-		)
-		(instances
-			(project "entree"
-				(path "/aa74195b-ecf6-4690-a06f-906cb3a91665"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 99.06 269.24 0)
 		(unit 1)
@@ -15424,7 +15495,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 312.42 38.1 0)
+		(at 323.85 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15432,7 +15503,7 @@
 		(dnp no)
 		(uuid "1388b000-201e-4bae-988f-edce3b9ef32e")
 		(property "Reference" "#PWR08"
-			(at 312.42 41.91 0)
+			(at 323.85 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15441,7 +15512,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 312.8518 33.7058 0)
+			(at 324.2818 33.7058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15449,7 +15520,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 38.1 0)
+			(at 323.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15458,7 +15529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 38.1 0)
+			(at 323.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15467,7 +15538,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 312.42 38.1 0)
+			(at 323.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18665,7 +18736,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 312.42 43.18 270)
+		(at 323.85 43.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18673,7 +18744,7 @@
 		(dnp no)
 		(uuid "76c4ba8a-3d1d-4b91-aee0-7c654945f828")
 		(property "Reference" "#FLG01"
-			(at 314.325 43.18 0)
+			(at 325.755 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18682,7 +18753,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 315.6712 43.18 90)
+			(at 327.1012 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18692,7 +18763,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 43.18 0)
+			(at 323.85 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18701,7 +18772,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 312.42 43.18 0)
+			(at 323.85 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18710,7 +18781,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 312.42 43.18 0)
+			(at 323.85 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19515,7 +19586,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "100k"
 			(at 277.368 49.276 0)
 			(effects
 				(font
@@ -19614,7 +19685,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25531"
+		(property "LCSC" ""
 			(at 278.13 48.26 0)
 			(effects
 				(font
@@ -23831,6 +23902,139 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:BAS16W")
+		(at 314.96 52.07 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee5dd56c-d8a8-4bd7-ada6-30c9005eb961")
+		(property "Reference" "D1"
+			(at 314.96 46.863 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAS16WT1G"
+			(at 314.96 49.1744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+			(at 314.96 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BAS16WT1-D.PDF"
+			(at 314.96 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Protect logic pin from battery wake"
+			(at 314.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "ON Semiconductor"
+			(at 314.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BAS16WT1G"
+			(at 314.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 314.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "BAS16WT1GOSCT-ND"
+			(at 314.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
+			(at 314.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Config" ""
+			(at 314.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 314.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c29c471-1ac6-4900-be33-a17c51eb32c9")
+		)
+		(pin "2"
+			(uuid "28a177ad-8ff7-4c97-956d-597fdada498b")
+		)
+		(pin "3"
+			(uuid "698e63a8-bbae-4db1-aab1-ccf983e365dc")
+		)
+		(instances
+			(project "entree"
+				(path "/aa74195b-ecf6-4690-a06f-906cb3a91665"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Management:SiP32432DR3")
 		(at 295.91 54.61 0)
 		(unit 1)
@@ -23865,7 +24069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.vishay.com.hk/docs/66597/sip32431.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/66597/sip32431.pdf"
 			(at 295.91 54.61 0)
 			(effects
 				(font

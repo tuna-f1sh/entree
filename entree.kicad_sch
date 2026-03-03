@@ -7445,10 +7445,6 @@
 		(uuid "3c9fa7fd-2d26-405a-b7e4-aa25b88f7917")
 	)
 	(no_connect
-		(at 143.51 195.58)
-		(uuid "5de22cfd-6823-444e-85e0-e7e141e00150")
-	)
-	(no_connect
 		(at 143.51 165.1)
 		(uuid "7012de68-6e7c-4053-b6e1-31fcad01a333")
 	)
@@ -8818,6 +8814,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 195.58) (xy 177.8 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93eb4762-8c11-4e87-bf1c-4553578660d9")
+	)
+	(wire
+		(pts
 			(xy 179.07 50.8) (xy 179.07 60.96)
 		)
 		(stroke
@@ -9548,6 +9554,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 205.74) (xy 177.8 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfddbae8-d2b6-4bb9-9456-903db654d4f2")
+	)
+	(wire
+		(pts
 			(xy 87.63 165.1) (xy 77.47 165.1)
 		)
 		(stroke
@@ -9565,6 +9581,16 @@
 			(type default)
 		)
 		(uuid "e0e584c7-9f39-45f6-a309-7eb4019b01dd")
+	)
+	(wire
+		(pts
+			(xy 143.51 195.58) (xy 177.8 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e49bf8d8-2665-4c95-b3cf-074cd5b5931a")
 	)
 	(wire
 		(pts
@@ -18153,6 +18179,70 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 177.8 208.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e4536eb-d512-4dd1-a8c8-3aaf16e3660d")
+		(property "Reference" "#PWR030"
+			(at 177.8 208.28 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 210.058 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 208.28 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 208.28 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2077c8a-806a-43d4-bbb3-de0da3579bd0")
+		)
+		(instances
+			(project "entree"
+				(path "/aa74195b-ecf6-4690-a06f-906cb3a91665"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint_Small")
 		(at 365.76 133.35 0)
 		(unit 1)
@@ -22518,6 +22608,148 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 177.8 201.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3c49b74-b005-4940-baa4-4e5488b32d51")
+		(property "Reference" "JP1"
+			(at 179.451 201.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 175.8221 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" ""
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "MCUboot button jumper"
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Config" "nofit"
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" ""
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" ""
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 177.8 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf32a8b5-628b-4250-b3ac-29ea92bad0a7")
+		)
+		(pin "2"
+			(uuid "9b79ad47-68dd-4b4a-aab2-c05f9b267d1b")
+		)
+		(instances
+			(project "entree"
+				(path "/aa74195b-ecf6-4690-a06f-906cb3a91665"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 73.66 48.26 0)
 		(mirror y)
@@ -23989,7 +24221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" ""
+		(property "Notes" "MOSFET has reverse body diode but this prevents VDD > VBUS back powering into VBUS when enabled"
 			(at 314.96 52.07 0)
 			(effects
 				(font

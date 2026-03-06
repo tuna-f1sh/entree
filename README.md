@@ -4,7 +4,7 @@ The Entrée is a USB-C CAN/CAN FD (up to 8 Mbit/s) interface, designed to be ful
 
 Entrée - like a Canapé but tastier...yes the logo is, and name was, Canapé but I didn't want to face a [Trademark](http://tmsearch.uspto.gov/bin/showfield?f=doc&state=4801:pgy4lj.2.5) dispute over an acute e for a hobby project...
 
-![Entrée PCBA](./img/entree-pcba.jpg)
+![Entrée PCBA](./img/entree-pcba.png)
 
 ## Features
 

@@ -30,7 +30,7 @@ endif
 # KICADMK_DIR = ./kicad-makefile
 
 # Optionally include a supplier Makefile to define flags used by that supplier
-include $(KICADMK_DIR)/suppliers/PCBWay.mk
+include $(KICADMK_DIR)/suppliers/JLCPCB.mk
 
 # Include the KiCad Makefile
 include $(KICADMK_DIR)/Kicad.mk

@@ -1,6 +1,6 @@
 # Entrée USB-C CAN Interface
 
-The Entrée is a USB-C CAN/CAN FD (up to 8 Mbit/s) interface, designed to be fully feature-compatible with the [CANnectivity firmware](https://github.com/CANnectivity/cannectivity) firmware and Linux SocketCAN.
+The Entrée is a USB-C CAN/CAN FD (up to 8 Mbit/s) interface, designed to be fully feature-compatible with the [CANnectivity firmware](https://github.com/tuna-f1sh/cannectivity) firmware and Linux SocketCAN.
 
 Entrée - like a Canapé but tastier...yes the logo is, and name was, Canapé but I didn't want to face a [Trademark](http://tmsearch.uspto.gov/bin/showfield?f=doc&state=4801:pgy4lj.2.5) dispute over an acute e for a hobby project...
 
@@ -8,7 +8,7 @@ Entrée - like a Canapé but tastier...yes the logo is, and name was, Canapé bu
 
 ## Features
 
-* Compatiable with [CANnectivity firmware](https://github.com/CANnectivity/cannectivity); Zephyr based gs_usb.
+* Compatiable with [CANnectivity firmware](https://github.com/tuna-f1sh/cannectivity); Zephyr based gs_usb.
 * USB-C connection for use with modern hardware.
 * Sotware and hardware switched control of 120 Ω termination resistor.
 * Sotware and hardware switched control of VBUS to VDD connection for powering from USB.

@@ -52,9 +52,9 @@ Below is a wiring example showing the Entrée Picoblade and JST pinout. A Black 
 A [Vagrant](https://www.vagrantup.com/) virtual machine environment is provided in the ./linux-vm folder for those on non-Linux hosts or who want a pre-configured environment. Install Vagrant and VirtualBox and then setup the machine from within the ./linux-vm folder with the `vagrant up` command.
 
 ### Linux SocketCAN
-e 
+
 Entrée comes with _CANnectivity_ firmware which is intended for use with a Linux host. Most Linux distributions include the gs_usb driver and can kernel modules by default so getting started is very easy.
-l
+
 The below assume a single CAN interface is present with default name `can0` - if multiple interfaces are present then the name may be different and can be found with `ip link`.
 
 #### Create CAN network interface [[ref]](https://elinux.org/Bringing_CAN_interface_up)

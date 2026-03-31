@@ -21,7 +21,6 @@ Entrée - like a Canapé but tastier...yes the logo is, and name was, Canapé bu
 
 # Purchase
 
-* [JBR Engineering shop](https://shop.jbrengineering.co.uk/product/entree-usb-c-to-can-interface-with-usb-pd/).
 * [Tindie](https://www.tindie.com/products/22440/)
 
 # Usage

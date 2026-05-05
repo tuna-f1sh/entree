@@ -846,25 +846,13 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -916,14 +904,20 @@
         },
         {
           "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
           "show": false
         },
         {
           "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
+          "label": "Qty",
+          "name": "${QUANTITY}",
           "show": false
         }
       ],
